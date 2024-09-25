@@ -2590,7 +2590,6 @@ button.cards, button.cards:focus, button.cards:active {
   }
   .thankyoupage .activation-time.border-box {
     padding: 1em 1em 3em;
-    margin: 0 !important;
   }
   .reset-links p {
     flex-direction: column;
