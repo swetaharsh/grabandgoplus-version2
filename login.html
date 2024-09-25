@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login - Grab and Go Plus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/custom-grabandgoplus.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<script> 
+$(function(){
+$("#header").load("header.html");
+$("#footer").load("footer.html"); 
+});
+</script>  
+</head>
+<body>
+<div id="header"></div>     
+<main>
+ 
+<div class="main-wrapper">
+  <div class="container">
+      <div class="row justify-content-around">
+         <div class="col-sm-12 col-lg-12 col-xl-9">
+          <div class="client-info">
+          <div class="lifestyle-pic form-page-pic">
+            <img src="images/login-pic.jpg" alt="">  
+            </div>
+            <div class="retailer-form">              
+              <form action="">
+              <div class="personal-info">
+              <div class="row">  
+                <div class="col-12 my-4">
+                  <p class="title">LOGIN</p>
+                  <h3 class="">Hello</h3>    
+                </div>                    
+                      
+               <div class="col-12 mb-3">
+                 <label for="Email" class="form-label">Email Address *</label>
+                 <input type="text" class="form-control" id="Email">
+               </div> 
+               <div class="col-12 mb-3">
+                 <label for="Password" class="form-label">Password</label>
+                 <input type="password" class="form-control" id="Password">
+               </div> 
+              </div>
+              
+              </div>          
+              <div>
+                  <button type="submit" class="btn btn-primary my-2">LOGIN</button>
+                </div>
+              <div class="reset-links">
+               <a href="login-reset.html">Reset Password?</a>
+               <p class="small d-flex">New to Grabandgoplus? <a href="register.html" class="m-0 mx-2">Create an account</a></p>
+              </div>
+              
+              </form>
+              
+              
+              </div>
+          </div>
+  </div>
+</div>
+</div>
+
+</main>    
+
+<div id="footer"></div>
+
+</body>
+</html>
+

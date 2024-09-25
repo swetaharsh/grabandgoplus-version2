@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Activate My SIM - Grab & Go Plus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom-grabandgoplus.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script> 
+    $(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+    });
+    </script>
+
+</head>
+<body class="content-pages">
+<div id="header"></div>
+<main>
+<div class="main-wrapper">
+  <div class="container">
+  <div class="backtoplan mb-3"><button onclick="history.back()">Back to plans</button></div>
+</div>
+<div class="container">
+    <div class="row">
+<div class="col-md-12">   
+<div class="content activatesim">
+  <h3>Let’s activate your SIM Card in a few Easy Steps</h3>
+<div class="sim-details active step-box mt-4 active-blue">
+  <div class="heading"><span>a</span>SIM Card Details</div>
+  <div class="details">
+<div class="row">
+  <div class="col-12 col-md-6 p-0">
+<div class="col-12 mb-3">
+  <label for="simcardnumber" class="form-label">Enter your SIM card number</label>
+  <input type="number" class="form-control" id="simcardnumber">
+</div>
+<div class="col-12 mb-3">
+  <label for="simcardnumberconfirm" class="form-label">Confirm SIM card number</label>
+  <input type="number" class="form-control" id="simcardnumberconfirm">
+</div>
+</div>
+</div>
+<div class="d-flex mb-2">
+  <button class="step1 btn btn-primary my-3">Continue</button>
+</div>
+</div>
+</div>
+<div class="order-details step-box mt-4">
+  <div class="heading"><span>b</span>Your Order Details</div>
+  <div class="details">
+<div class="row justify-content-between disabled">
+<div class="col-12 col-lg-6 mb-3">
+  <div class="order-purchase">
+    <div class="d-flex justify-content-between">
+      <div class="about-purchase">
+      <h4 class="blue-color">Grab and Go Plus Purchase</h4>
+      <h4>Enter the 7-digits Activation Code</h4>
+      <p class="small">(Activation code can be found on your SIM card or on the Packaging)</p>
+      <div class="mb-3">
+        <input type="number" class="form-control" id="simcardnumber">
+      </div>
+    </div>
+    <div class="logo"><img src="images/grabandgo-sim-order.png" alt=""></div>
+    </div>
+ 
+   
+    
+    
+    
+    </div>
+    <div class="order-purchase my-4">
+      <div class="d-flex justify-content-between">
+        <div class="about-purchase">
+        <h4 class="blue-color">Phone Number:</h4>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            I want a new number.
+          </label>
+        </div>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            I want to transfer my exiting number.
+            <small class="d-flex">(Your existing number must be active)</small>
+          </label>
+        </div>
+      </div>
+    </div>   
+      </div>  
+
+      <div class="register-info my-4">
+        <div class="d-flex justify-content-between">
+          <div class="about-purchase">
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault5" checked>
+            <label class="form-check-label" for="flexRadioDefault5">
+              Registration Information
+              <small class="d-flex">(We will register your account with the carrier using this information)</small>
+            </label>
+          </div>
+        </div>
+      </div>   
+
+
+      <div class="shipping-details">
+        <div class="user-data">
+          <h4>Shipping Address</h4>      
+      <div class="shipping-info-add active">
+        <form action="">
+          <div class="row d-flex">
+          <div class="col-12 col-md-4 mb-3">
+            <label for="firstname" class="form-label">First Name *</label>
+            <input type="text" class="form-control" id="firstname">
+          </div> 
+          <div class="col-12 col-md-4 mb-3">
+            <label for="lastname" class="form-label">Last Name *</label>
+            <input type="text" class="form-control" id="lastname">
+          </div> 
+          <div class="col-12 col-md-4 mb-3">
+            <label for="lastname" class="form-label">Date of Birth *</label>
+            <input type="text" class="form-control" id="lastname">
+          </div>  
+          <div class="col-12 col-md-6 mb-3">
+            <label for="addressline1" class="form-label">Address Line 1 *</label>
+            <input type="text" class="form-control" id="addressline1">
+          </div> 
+          <div class="col-12 col-md-6 mb-3">
+            <label for="addressline2" class="form-label">Address Line 2 *</label>
+            <input type="text" class="form-control" id="addressline2">
+          </div> 
+          <div class="col-12 col-md-12 mb-3">
+            <label for="companyname" class="form-label">Company Name *</label>
+            <input type="text" class="form-control" id="companyname">
+          </div> 
+          <div class="col-12 col-md-4 mb-3">
+            <label for="city" class="form-label">City *</label>
+            <input type="text" class="form-control" id="city">
+          </div> 
+          <div class="col-12 col-md-4 mb-3">
+            <label for="country" class="form-label">Country</label>
+            <input type="text" class="form-control" id="country">
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <label for="province" class="form-label">Province</label>
+            <input type="text" class="form-control" id="province">
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <label for="postalcode" class="form-label">Postal/Zip Code *</label>
+            <input type="text" class="form-control" id="postalcode">
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <label for="phone" class="form-label">Phone *</label>
+            <input type="text" class="form-control" id="phone">
+          </div>
+        </div> 
+        </form>
+      </div>
+      </div>
+      </div>
+
+      <div class="d-flex my-4"><p><small>OR</small></p></div>
+
+      <div class="d-flex justify-content-between">
+        <div class="about-purchase">
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault6" checked>
+          <label class="form-check-label" for="flexRadioDefault6">
+             I want to remain anonymous
+            <small class="d-flex">(A random name and address will be selected for you. By remaining anonymous, you will have a difficult time opening an account with the carrier and getting support in case something does not work.)</small>
+          </label>
+        </div>
+      </div>
+    </div>  
+    
+    <div class="email-confirmation row my-3">
+        <div class="col-12">
+          <label for="email" class="form-label">Please enter email address for confirmation only:</label>
+          <input type="text" class="form-control col-md-6" id="email">
+        </div>
+        <div class="col-12 form-group form-check">
+          <input type="checkbox" class="form-check-input checkbox" id="exampleCheck7" checked="checked">
+          <label class="form-check-label" for="exampleCheck7">Please share my email address with Koodo Mobile</label>
+        </div>
+    </div>
+    
+
+    <div class="d-flex mb-2">
+      <button class="step2 btn btn-primary my-3">Continue</button>
+    </div>
+
+        </div>  
+</div>
+<div class="col-12 col-lg-5 mb-3">
+<div class="sim-order">
+<div class="d-flex justify-content-between">
+<div class="price">
+  <p class="m-0">Price</p>
+  <h4><sup>C$</sup>15.00/month</h4>
+</div>
+<div class="logo"><img src="images/koodo-sim-order.png" alt=""></div>
+</div>
+<div class="usp-plan">
+<ul>
+<li>Talk-Text (No Data)</li>
+<li>100 minutes Canada-wide Calls (Unlimited incoming calls)</li>
+<li>Unlimited International Text and Picture Messaging</li>
+</ul>
+</div>
+
+
+
+</div> 
+</div>
+</div>
+
+</div>
+</div>
+<div class="final-details step-box mt-4">
+  <div class="heading"><span>c</span>Finalize Activation</div>
+  <div class="details">
+<div class="row justify-content-between">
+<div class="col-12 col-lg-6 mb-3">
+  <div class="final-activation">   
+  <div class="area-code">
+  <p>What is the best area code for you? (please select 3 options)</p>
+  <div class="row">
+  <div class="col-12 col-md-4 mb-3">
+    <input type="text" class="form-control" id="city">
+  </div> 
+  <div class="col-12 col-md-4 mb-3">
+    <input type="text" class="form-control" id="country">
+  </div>
+  <div class="col-12 col-md-4 mb-3">
+    <input type="text" class="form-control" id="province">
+  </div>
+</div>
+</div>
+
+<div class="carrier-name my-3">
+  <p>Or select province where you live / where you will be visiting:</p>
+  <div class="row">
+  <div class="col-12 col-md-12">
+    <select class="form-select form-control" id="autoSizingSelect">
+      <option selected="">Carrier Name</option>
+      <option value="1">Koodo</option>
+      <option value="2">Chatr</option>
+      <option value="2">Lucky</option>
+    </select>
+  </div>
+</div>
+</div>
+<p class="small">Note: No matter your selection, you will be assigned a Canadian phone number and you will have unlimited calls within Canada (some plans allow unlimited calls to the US from Canada)</p>
+
+
+
+</div>
+</div>
+<div class="col-12 col-lg-5 mb-3">
+<div class="sim-order">
+<div class="d-flex justify-content-between">
+<div class="price">
+  <p class="m-0">Price</p>
+  <h4><sup>C$</sup>15.00/month</h4>
+</div>
+<div class="logo"><img src="images/koodo-sim-order.png" alt=""></div>
+</div>
+<div class="usp-plan">
+<ul>
+<li>Talk-Text (No Data)</li>
+<li>100 minutes Canada-wide Calls (Unlimited incoming calls)</li>
+<li>Unlimited International Text and Picture Messaging</li>
+</ul>
+</div>
+
+
+
+</div> 
+</div>
+
+<div class="col-12 final-activation">
+  <p class="small"><b>If you are transferring your old number; An Active line is required in order to transfer away from it to your new provider as you will be receiving a TEXT message to confirm the transfer. If your line with your current provider is not active or if you do not have the SIM card anymore, you will not be able to transfer your existing number. After activating, the previous service provider may send a text or email to validate the transfer. Follow the instructions in the message within 90 minutes to approve the number transfer. We will send you an email once the request has been made. Important: Make sure your old SIM card is inside your device, after you have completed your activation. Do not replace your old SIM with your new SIM until after you have confirmed the transfer which h you will receive by text message.</b></p>
+  <p class="small">Once you submit your details, we will send you a confirmation email. Please check your spam folder. Activating your SIM card may take up to 24 hours but in most cases it is activated within 1 hour during regular business hours (GMT-5). You will receive a second email once activated.</p>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="exampleCheck4" checked="checked">
+    <label class="form-check-label" for="exampleCheck4">Our company utilizes a text messaging platform as a means of supporting and engaging with our clients. By checking this box, you agree to receive a welcome message (from Grab and go plus only) with information regarding how to contact us for any support. Occasionally we may send you promotions via text message as well. You may unsubscribe at anytime. Unless you have opted not to remain anonymous on the previous screen, none of your information will ever be shared with anyone, not even the mobile operator.</label>
+  </div>
+  <div class="d-flex mb-2">
+    <a href="thankyou-activation.html" class="btn btn-primary my-3">Submit</a>
+  </div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</main>
+<div id="footer"></div>
+</body>
+</html>
+

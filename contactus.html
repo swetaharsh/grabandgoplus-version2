@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact Us - Grab and Go Plus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/custom-grabandgoplus.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<script> 
+$(function(){
+$("#header").load("header.html");
+$("#footer").load("footer.html"); 
+});
+</script>  
+</head>
+<body>
+<div id="header"></div>     
+<main>
+ 
+<div class="main-wrapper">
+  <div class="container">
+      <div class="row justify-content-around">
+         <div class="col-sm-12 col-lg-12 col-xl-9">
+          <div class="client-info">
+          <div class="lifestyle-pic content">
+            <figure><img src="images/contact-img.png" alt="">  </figure>
+            <div class="contact-usp">
+                <h3 class="my-4">The Network You Choose Matters.</h3>
+                <ul>
+                <li><span><img src="images/5g-icon.png" alt=""></span>Canada's Fastest 5G Network</li>
+                <li><span><img src="images/lte-icon.png" alt=""></span>Canada's Largest Network</li>
+                <li><span><img src="images/can-icon.png" alt=""></span>Canada's Best Network</li>
+                </ul>
+            </div>
+            
+            </div>
+          <div class="retailer-form">
+            <h3>Contact Us</h3>
+            <p class="small mb-3">Your feedback makes us better.</p>
+           <form action="">
+           <div class="personal-info">
+           <div class="row">
+           <div class="col-12 mb-3">
+               <label for="name" class="form-label">Name *</label>
+               <input type="text" class="form-control" id="name">
+             </div>  
+             <div class="col-12 mb-3">
+               <label for="email" class="form-label">E-mail *</label>
+               <input type="text" class="form-control" id="email">
+             </div> 
+             <div class="col-12 mb-3">
+                <label for="phone" class="form-label">Phone *</label>
+                <input type="number" class="form-control" id="phone">
+              </div> 
+              <div class="col-12 mb-3">
+                <label for="FormControlTextarea1" class="form-label">Message</label>
+  <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+              </div> 
+             
+           </div>
+           
+           </div>          
+           <div>
+               <button type="submit" class="btn btn-primary my-2">SUBMIT</button>
+             </div>
+           
+           
+           </form>
+           
+           
+           </div>
+          </div>
+  </div>
+</div>
+</div>
+
+</main>    
+
+<div id="footer"></div>
+
+</body>
+</html>
+
