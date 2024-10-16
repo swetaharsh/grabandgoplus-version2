@@ -56,9 +56,9 @@ $(document).ready(function() {
     }); 
     $('.heading').click(function() {
       $(this).closest('.active-blue').toggleClass("active");             
-  }); 
+  });
 
-  $('.esim-plan-modal').click(function() {
+$('.esim-plan-modal').click(function() {
     $('.plan-modal').addClass('active-modal');
     $('body').addClass('dark-overlay');
 });
@@ -66,7 +66,78 @@ $('.close-modal-btn').click(function() {
   $('.plan-modal').removeClass('active-modal');;
   $('body').removeClass('dark-overlay');
 });
+
+$('.change-pswd').click(function() {
+  $('.change-pswd-box').addClass('active-modal');
+  $('body').addClass('light-overlay');
+});
+$('.change-secpin').click(function() {
+  $('.change-secpin-box').addClass('active-modal');
+  $('body').addClass('light-overlay');
+});
+$('.edit-loginsecurity').click(function() {
+  $('.edit-loginsecurity-box').addClass('active-modal');
+  $('body').addClass('light-overlay');
+});
+$('.add-newaddress').click(function() {
+  $('.add-newaddress-box').addClass('active-modal');
+  $('body').addClass('light-overlay');
+});
+$('.edit-address').click(function() {
+  $('.edit-address-box').addClass('active-modal');
+  $('body').addClass('light-overlay');
+});
+$('.remove-address').click(function() {
+  $('.remove-address-box').addClass('active-modal');
+  $('body').addClass('light-overlay');
+});
+$('.add-payment').click(function() {
+  $('.add-payment-box').addClass('active-modal');
+  $('body').addClass('light-overlay');
+});
+$('.edit-payment').click(function() {
+  $('.edit-payment-box').addClass('active-modal');
+  $('body').addClass('light-overlay');
+});
+$('.remove-paymentopt').click(function() {
+  $('.remove-paymentoption-box').addClass('active-modal');
+  $('body').addClass('light-overlay');
+});
+$('.close-modal-btn').click(function() {
+$('.user-modal').removeClass('active-modal');;
+$('body').removeClass('light-overlay');
+});
         });
+        jQuery(document).ready(function($) {
+          "use strict";
+          //  TESTIMONIALS CAROUSEL HOOK
+          $('.customers-testimonials').owlCarousel({
+              loop: true,
+              center: true,
+              items: 3,
+              margin: 0,
+              autoplay: true,
+              dots:false,
+            nav:true,
+              autoplayTimeout: 8500,
+              smartSpeed: 450,
+              responsive: {
+                0: {
+                  items: 1
+                },
+                768: {
+                  items: 2
+                },
+                1170: {
+                  items: 3
+                }
+              }
+          });
+        });
+        $('.owl-carousel').find('.owl-nav').removeClass('disabled');
+$('.owl-carousel').on('changed.owl.carousel', function(event) {
+	$(this).find('.owl-nav').removeClass('disabled');
+});
 
         jQuery(document.body).scroll(function() {
           var scroll = jQuery(document.body).scrollTop();
@@ -115,7 +186,33 @@ $('.close-modal-btn').click(function() {
         // Replace IMG with SVG
         $img.replaceWith($svg);
     }, 'xml');
-});  
+}); 
+jQuery(document).ready(function($) {
+        		"use strict";
+        		//  TESTIMONIALS CAROUSEL HOOK
+		        $('#customers-testimonials').owlCarousel({
+		            loop: true,
+		            center: true,
+		            items: 3,
+		            margin: 0,
+		            autoplay: true,
+		            dots:false,
+                nav:true,
+		            autoplayTimeout: 8500,
+		            smartSpeed: 450,
+		            responsive: {
+		              0: {
+		                items: 1
+		              },
+		              768: {
+		                items: 2
+		              },
+		              1170: {
+		                items: 3
+		              }
+		            }
+		        });
+        	}); 
    
    function initializeClock(id, endtime) {
      var clock = document.getElementById(id);
@@ -140,3 +237,4 @@ $('.close-modal-btn').click(function() {
    }
    var deadline = new Date(Date.parse(new Date()) + 0o1 * 60 * 60 * 1000);
    initializeClock('clockdiv', deadline);   
+   
