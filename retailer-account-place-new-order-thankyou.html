@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Thank You - Retailer Account - Grab and Go Plus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/custom-grabandgoplus.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<script> 
+$(function(){
+$("#header-retailer").load("header-retailer.html");
+$("#footer").load("footer.html"); 
+});
+</script>  
+</head>
+<body class="customer-account">
+<div id="header-retailer"></div>     
+<main> 
+<div class="main-wrapper">
+
+<div class="customer-account-details">
+<div class="sidebar">
+<h4>My Account</h4>
+<nav class="vertical-menu">
+  <ul>
+    <li><a href="retailer-account-loginsecurity.html"><span class="icon"><img src="images/login-security-icon.svg" alt="" class="svg"></span><span class="title">Login and Security</span></a></li>
+    <li><a href="retailer-account-address.html"><span class="icon"><img src="images/address-icon.svg" alt="" class="svg"></span><span class="title">Your Addresses</span></a></li>
+    <li><a href="retailer-account-payment-options.html"><span class="icon"><img src="images/payment-options-icon.svg" alt="" class="svg"></span><span class="title">Payment Options</span></a></li>
+    <li><a href="retailer-account-order-history.html"><span class="icon"><img src="images/order-history-icon.svg" alt="" class="svg"></span><span class="title">Order History</span></a></li>
+  </ul>
+  <hr>
+  <ul class="addon-link">   
+   <li class="active"><a href="retailer-account-place-new-order.html"><span class="icon"><img src="images/new-order-icon.svg" alt="" class="svg"></span><span class="title">Place New Order</span></a></li>
+    <li><a href="retailer-account-activations.html"><span class="icon"><img src="images/activation-icon.svg" alt="" class="svg"></span><span class="title">Activation</span></a></li>
+    </ul>
+
+</nav>
+</div> 
+<div class="account-content">
+  <div class="heading d-flex justify-content-between mb-md-4 mb-2 mt-2 mt-sm-0 justify-content-end">
+    <h3>Place New Order</h3>
+    <p>Retailer</p>
+    </div>
+<div class="content-block order-history new-order">
+  <div class="row justify-content-between"> 
+      <div class="col-sm-12 col-lg-12 col-xl-7">    
+        <div class="content thankyou">
+        <h4>You’re Awesome!</h4>
+        <h3 class="title heading my-3">Thank you. Your order has been placed.</h3>
+        </div>
+
+        <div class="d-flex">
+          <a href="retailer-account-loginsecurity.html" class="btn btn-primary my-3">Back to home</a>
+          </div>
+      </div>
+
+</div>
+</div>
+</div>
+
+
+</div>
+
+</div>
+</main>    
+
+<div id="footer"></div>
+
+
+<script>
+  $('.add').click(function () {		
+var th = $(this).closest('.quantity-box').find('.count');    	
+th.val(+th.val() + 1);
+});
+$('.sub').click(function () {
+var th = $(this).closest('.quantity-box').find('.count');    	
+    if (th.val() > 1) th.val(+th.val() - 1);
+});
+</script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Place New Order - Retailer Account - Grab and Go Plus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/custom-grabandgoplus.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<script> 
+$(function(){
+$("#header-retailer").load("header-retailer.html");
+$("#footer").load("footer.html"); 
+});
+</script>  
+</head>
+<body class="customer-account">
+<div id="header-retailer"></div>     
+<main> 
+<div class="main-wrapper">
+
+<div class="customer-account-details">
+<div class="sidebar">
+<h4>My Account</h4>
+<nav class="vertical-menu">
+  <ul>
+    <li><a href="retailer-account-loginsecurity.html"><span class="icon"><img src="images/login-security-icon.svg" alt="" class="svg"></span><span class="title">Login and Security</span></a></li>
+    <li><a href="retailer-account-address.html"><span class="icon"><img src="images/address-icon.svg" alt="" class="svg"></span><span class="title">Your Addresses</span></a></li>
+    <li><a href="retailer-account-payment-options.html"><span class="icon"><img src="images/payment-options-icon.svg" alt="" class="svg"></span><span class="title">Payment Options</span></a></li>
+    <li><a href="retailer-account-order-history.html"><span class="icon"><img src="images/order-history-icon.svg" alt="" class="svg"></span><span class="title">Order History</span></a></li>
+  </ul>
+  <hr>
+  <ul class="addon-link">   
+   <li class="active"><a href="retailer-account-place-new-order.html"><span class="icon"><img src="images/new-order-icon.svg" alt="" class="svg"></span><span class="title">Place New Order</span></a></li>
+    <li><a href="retailer-account-activations.html"><span class="icon"><img src="images/activation-icon.svg" alt="" class="svg"></span><span class="title">Activation</span></a></li>
+    </ul>
+</nav>
+</div> 
+<div class="account-content">
+  <div class="heading d-flex justify-content-between mb-md-4 mb-2 mt-2 mt-sm-0 justify-content-end">
+    <h3>Place New Order</h3>
+    <p>Retailer</p>
+    </div>
+<div class="content-block order-history new-order">
+  <div class="row"> 
+    <div class="col-12">
+
+      <div class="border-box order-history-row headings">     
+        <div class="order-id order-type"><span class="title">Order</span></div>   
+        <div class="order-qty order-type"><span class="title">Quantity</span></div>        
+        <div class="order-price order-type"><span class="title">Price</span></div>
+        <div class="order-total order-type"><span class="title">Total</span></div>
+        <div class="order-action order-type"><span class="title">Action</span></div>
+        </div>
+
+      <div class="border-box order-history-row ">        
+        <div class="order-id order-type"><span class="title">Order</span>
+        
+          <div class="browse-btn">
+            <figure><img src="images/sim-thumb.jpg" alt=""></figure>
+            <div class="plan-details">
+            <ul><li>Koodo Sim Card $50 Bundle <small>#01334565456789</small></li></ul>
+          </div>
+            </div>    
+        </div>   
+        <div class="order-qty order-type cart-info"><span class="title">Quantity</span>
+          <div class="cart-details">
+          <div class="quantity">         
+          <div class="quantity-box">
+            <button type="button" id="sub" class="sub">-</button>
+            <input class="count" type="text" id="1" value="150" min="1" max="150" />
+            <button type="button" id="add" class="add">+</button>
+          </div>
+        </div>
+        </div></div>        
+        <div class="order-price order-type"><span class="title">Price</span>$15</div>
+        <div class="order-total order-type"><span class="title">Total</span>$1500</div>
+        <div class="order-action order-type"><span class="title">Action</span><a href="retailer-account-place-new-order-cart.html" class="btn btn-primary">Add to Cart</a></div>
+      </div>
+
+      <div class="border-box order-history-row ">        
+        <div class="order-id order-type"><span class="title">Order</span>
+        
+          <div class="browse-btn">
+            <figure><img src="images/lucky-sim-thumb.jpg" alt=""></figure>
+            <div class="plan-details">
+            <ul><li>Lucky Mobile Sim Card $50 Bundle <small>#01334565456790</small></li></ul>
+          </div>
+            </div>    
+        </div>   
+        <div class="order-qty order-type cart-info"><span class="title">Quantity</span>
+          <div class="cart-details">
+          <div class="quantity">         
+          <div class="quantity-box">
+            <button type="button" id="sub" class="sub">-</button>
+            <input class="count" type="text" id="1" value="150" min="1" max="150" />
+            <button type="button" id="add" class="add">+</button>
+          </div>
+        </div>
+        </div></div>        
+        <div class="order-price order-type"><span class="title">Price</span>$12</div>
+        <div class="order-total order-type"><span class="title">Total</span>$1500</div>
+        <div class="order-action order-type"><span class="title">Action</span><a href="retailer-account-place-new-order-cart.html" class="btn btn-primary">Add to Cart</a></div>
+      </div>
+
+      <div class="border-box order-history-row ">        
+        <div class="order-id order-type"><span class="title">Order</span>
+        
+          <div class="browse-btn">
+            <figure><img src="images/chatr-sim-thumb.jpg" alt=""></figure>
+            <div class="plan-details">
+            <ul><li>Chatr Mobile Sim Card $50 Bundle <small>#01334565456791</small></li></ul>
+          </div>
+            </div>    
+        </div>   
+        <div class="order-qty order-type cart-info"><span class="title">Quantity</span>
+          <div class="cart-details">
+          <div class="quantity">         
+          <div class="quantity-box">
+            <button type="button" id="sub" class="sub">-</button>
+            <input class="count" type="text" id="1" value="150" min="1" max="150" />
+            <button type="button" id="add" class="add">+</button>
+          </div>
+        </div>
+        </div></div>        
+        <div class="order-price order-type"><span class="title">Price</span>$14</div>
+        <div class="order-total order-type"><span class="title">Total</span>$1500</div>
+        <div class="order-action order-type"><span class="title">Action</span><a href="retailer-account-place-new-order-cart.html" class="btn btn-primary">Add to Cart</a></div>
+      </div>
+
+      </div>
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+<div class="heading d-flex justify-content-between">
+  <h3 class="mb-4">Marketing Materials</h3>
+  </div>
+  <div class="content-block order-history new-order">
+    <div class="row"> 
+      <div class="col-12">
+  
+        <div class="border-box order-history-row headings">     
+          <div class="order-id order-type"><span class="title">Order</span></div>   
+          <div class="order-qty order-type"><span class="title">Quantity</span></div>        
+          <div class="order-price order-type"><span class="title">Price</span></div>
+          <div class="order-total order-type"><span class="title">Total</span></div>
+          <div class="order-action order-type"><span class="title">Action</span></div>
+          </div>
+  
+          <div class="border-box order-history-row ">        
+            <div class="order-id order-type"><span class="title">Order</span>
+            
+              <div class="browse-btn">
+                <figure><img src="images/poster-design-thumb.jpg" alt=""></figure>
+                <div class="plan-details">
+                <ul><li>Poster Design <small>#01334565456792</small></li></ul>
+              </div>
+                </div>    
+            </div>   
+            <div class="order-qty order-type cart-info"><span class="title">Quantity</span>
+              <div class="cart-details">
+              <div class="quantity">         
+              <div class="quantity-box">
+                <button type="button" id="sub" class="sub">-</button>
+                <input class="count" type="text" id="1" value="150" min="1" max="150" />
+                <button type="button" id="add" class="add">+</button>
+              </div>
+            </div>
+            </div></div>        
+            <div class="order-price order-type"><span class="title">Price</span>$12</div>
+            <div class="order-total order-type"><span class="title">Total</span>$1500</div>
+            <div class="order-action order-type"><span class="title">Action</span><a href="retailer-account-place-new-order-cart.html" class="btn btn-primary">Add to Cart</a></div>
+          </div>
+        <div class="border-box order-history-row ">        
+          <div class="order-id order-type"><span class="title">Order</span>
+          
+            <div class="browse-btn">
+              <figure><img src="images/flyer-design-thumb.jpg" alt=""></figure>
+              <div class="plan-details">
+              <ul><li>Flyer Design <small>#01334565456793</small></li></ul>
+            </div>
+              </div>    
+          </div>   
+          <div class="order-qty order-type cart-info"><span class="title">Quantity</span>
+            <div class="cart-details">
+            <div class="quantity">         
+            <div class="quantity-box">
+              <button type="button" id="sub" class="sub">-</button>
+              <input class="count" type="text" id="1" value="150" min="1" max="150" />
+              <button type="button" id="add" class="add">+</button>
+            </div>
+          </div>
+          </div></div>        
+          <div class="order-price order-type"><span class="title">Price</span>$12</div>
+          <div class="order-total order-type"><span class="title">Total</span>$1500</div>
+          <div class="order-action order-type"><span class="title">Action</span><a href="retailer-account-place-new-order-cart.html" class="btn btn-primary">Add to Cart</a></div>
+        </div>
+  
+        </div>
+  
+  
+  
+  
+  
+  </div>
+  </div>
+</div>
+
+
+</div>
+
+</div>
+</main>    
+
+<div id="footer"></div>
+
+
+<script>
+  $('.add').click(function () {		
+var th = $(this).closest('.quantity-box').find('.count');    	
+th.val(+th.val() + 1);
+});
+$('.sub').click(function () {
+var th = $(this).closest('.quantity-box').find('.count');    	
+    if (th.val() > 1) th.val(+th.val() - 1);
+});
+</script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Order History - Distributor Account - Grab and Go Plus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/custom-grabandgoplus.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<script> 
+$(function(){
+$("#header-retailer").load("header-retailer.html");
+$("#footer").load("footer.html"); 
+});
+</script>  
+</head>
+<body class="customer-account">
+<div id="header-retailer"></div>     
+<main> 
+<div class="main-wrapper">
+
+<div class="customer-account-details">
+<div class="sidebar">
+<h4>My Account</h4>
+<nav class="vertical-menu">
+  <ul>
+     <li><a href="distributor-account-loginsecurity.html"><span class="icon"><img src="images/login-security-icon.svg" alt="" class="svg"></span><span class="title">Login and Security</span></a></li>
+    <li><a href="distributor-account-address.html"><span class="icon"><img src="images/address-icon.svg" alt="" class="svg"></span><span class="title">Your Addresses</span></a></li>
+    <li><a href="distributor-account-payment-options.html"><span class="icon"><img src="images/payment-options-icon.svg" alt="" class="svg"></span><span class="title">Payment Options</span></a></li>
+    <li class="active"><a href="distributor-account-order-history.html"><span class="icon"><img src="images/order-history-icon.svg" alt="" class="svg"></span><span class="title">Order History</span></a></li>
+  </ul>
+  <hr>
+  <ul class="addon-link">
+    <li><a href="distributor-account-my-retailers.html"><span class="icon"><img src="images/Retailers-icon.svg" alt="" class="svg"></span><span class="title">My Retailers</span></a></li> 
+    <li><a href="distributor-account-my-commissions.html"><span class="icon"><img src="images/commissions-icon.svg" alt="" class="svg"></span><span class="title">My Commissions</span></a></li> 
+    <li><a href="distributor-account-activations.html"><span class="icon"><img src="images/activation-icon.svg" alt="" class="svg"></span><span class="title">Activation</span></a></li>
+    </ul>
+  </nav>
+</div> 
+<div class="account-content">
+  <div class="heading d-flex justify-content-between mb-md-4 mb-2 mt-2 mt-sm-0 justify-content-end">
+    <h3>Order History</h3>
+    <p>Distributor</p>
+    </div>
+<div class="content-block order-history">
+  <div class="row"> 
+    <div class="col-12">
+
+      <div class="border-box order-history-row headings">        
+        <div class="order-date order-type"><span class="title">Date</span></div>
+        <div class="order-id order-type"><span class="title">Order Id</span></div>
+        <div class="order-total order-type"><span class="title">Total</span></div>
+        <div class="order-status order-type"><span class="title">Status</span></div>
+        <div class="order-tracking order-type"><span class="title">Tracking</span></div>
+        <div class="order-action order-type"><span class="title"></span></div>
+        </div>
+
+      <div class="border-box order-history-row">        
+      <div class="order-date order-type"><span class="title">Date</span>12/31/2024</div>
+      <div class="order-id order-type"><span class="title">Order Id</span>#99083473092</div>
+      <div class="order-total order-type"><span class="title">Total</span>$66.97</div>
+      <div class="order-status order-type"><span class="title">Status</span>Pending</div>
+      <div class="order-tracking order-type"><span class="title">Tracking</span>1Z7843655498</div>
+      <div class="order-action order-type action"><span class="title"></span><a href="#">Details</a><a href="#">Invoice</a><a href="#">Reorder</a></div>
+      </div>
+        <div class="border-box order-history-row">        
+          <div class="order-date order-type"><span class="title">Date</span>12/25/2024</div>
+          <div class="order-id order-type"><span class="title">Order Id</span>#70549673045</div>
+          <div class="order-total order-type"><span class="title">Total</span>$66.97</div>
+          <div class="order-status order-type"><span class="title">Status</span>Complete</div>
+          <div class="order-tracking order-type"><span class="title">Tracking</span>1Z7843655498</div>
+          <div class="order-action order-type action"><span class="title"></span><a href="#">Details</a><a href="#">Invoice</a><a href="#">Reorder</a></div>
+          </div>
+          <div class="border-box order-history-row">        
+            <div class="order-date order-type"><span class="title">Date</span>12/12/2024</div>
+            <div class="order-id order-type"><span class="title">Order Id</span>#99083473092</div>
+            <div class="order-total order-type"><span class="title">Total</span>$35.97</div>
+            <div class="order-status order-type"><span class="title">Status</span>Pending</div>
+            <div class="order-tracking order-type"><span class="title">Tracking</span>Local</div>
+            <div class="order-action order-type action"><span class="title"></span><a href="#">Details</a><a href="#">Invoice</a><a href="#">Reorder</a></div>
+            </div>
+            <div class="border-box order-history-row">        
+              <div class="order-date order-type"><span class="title">Date</span>12/5/2024</div>
+              <div class="order-id order-type"><span class="title">Order Id</span>#99083473092</div>
+              <div class="order-total order-type"><span class="title">Total</span>$35.97</div>
+              <div class="order-status order-type"><span class="title">Status</span>Complete</div>
+              <div class="order-tracking order-type"><span class="title">Tracking</span>Local</div>
+              <div class="order-action order-type action"><span class="title"></span><a href="#">Details</a><a href="#">Invoice</a><a href="#">Reorder</a></div>
+              </div>
+              <div class="border-box order-history-row">        
+                <div class="order-date order-type"><span class="title">Date</span>11/28/2024</div>
+                <div class="order-id order-type"><span class="title">Order Id</span>#99083473092</div>
+                <div class="order-total order-type"><span class="title">Total</span>$35.97</div>
+                <div class="order-status order-type"><span class="title">Status</span>Pending</div>
+                <div class="order-tracking order-type"><span class="title">Tracking</span>Local</div>
+                <div class="order-action order-type action"><span class="title"></span><a href="#">Details</a><a href="#">Invoice</a><a href="#">Reorder</a></div>
+                </div>
+
+      </div>
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</main>    
+
+<div id="footer"></div>
+
+
+<!--plan modal add payment option-->
+<div class="user-modal add-payment-box">
+  <div class="header"><h4>Add Payment Method</h4><button class="close-modal-btn"><img src="images/close-icon-small.svg" alt="" class="svg"></button></div>
+  <div class="content p-4">
+    <figure class="my-3"><img src="images/payment-cards.png" alt=""></figure>
+   <form action="">
+     <div class="row">
+     <div class="col-12 mb-3">
+         <label for="cardholdername" class="form-label">Cardholder name*</label>
+         <input type="text" class="form-control" id="cardholdername">
+       </div> 
+       <div class="col-12 mb-3">
+         <label for="cardnumber" class="form-label">Card number*</label>
+         <input type="number" class="form-control" id="cardnumber">
+       </div> 
+       <div class="col-12 mb-3">
+         <label for="expirationdate" class="form-label">Expiration date (MM / YY)</label>
+         <input type="number" class="form-control" id="expirationdate">
+       </div> 
+       <div class="col-12 mb-3">
+        <label for="securitycode" class="form-label">Security code</label>
+        <input type="text" class="form-control" id="securitycode">
+      </div> 
+       </div>
+   </form>
+   <div class="d-flex my-2 justify-content-end">
+    <button type="submit" class="btn btn-outline-secondary">Cancel</button>
+      <button type="submit" class="btn btn-primary ml-2">Add Card</button>
+  </div>
+ </div>
+  
+ </div>
+
+<!--plan modal Edit Payment-->
+<div class="user-modal edit-payment-box">
+  <div class="header"><h4>Edit Payment Method</h4><button class="close-modal-btn"><img src="images/close-icon-small.svg" alt="" class="svg"></button></div>
+  <div class="content p-4">
+      <div class="border-box">
+         <div class="d-flex justify-content-between">
+       <div class="payment-card">
+         <figure><img src="images/visa-card.png" alt=""></figure>
+         <p>Visa ending in 7830 <small>Exp. date 06/29</small></p>
+       </div>
+       <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+      </div>
+       </div>
+       </div>
+       <div class="border-box">
+         <div class="d-flex justify-content-between align-content-center">
+       <div class="payment-card">
+         <figure><img src="images/visa-card.png" alt=""></figure>
+         <p>Visa ending in 7830 <small>Exp. date 06/29</small></p>
+       </div>
+       <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+      </div>
+     </div>
+       </div>
+   <div class="d-flex my-2 justify-content-end">
+      <button type="submit" class="btn btn-primary">Continue</button>
+  </div>
+ </div>
+  
+ </div>
+
+  
+<!--plan modal Remove Payment Method-->
+<div class="user-modal remove-paymentoption-box">
+  <div class="header"><h4>Remove Payment Method</h4><button class="close-modal-btn"><img src="images/close-icon-small.svg" alt="" class="svg"></button></div>
+  <div class="content p-4">
+   <form action="">
+     <div class="row">
+            <div class="col-12 mb-3">
+              <div class="account-address">
+                <p>To remove this card form your Grab & Go Plus account, choose Confirm.</p>
+                
+                </div>
+                <div class="note small my-2">Please note this will not remove the card from other Grab & Go Plus accounts where it is saved.</div>
+        </div>
+       </div>
+   </form>
+   <div class="d-flex my-2 justify-content-end">
+    <button type="submit" class="btn btn-outline-secondary">Cancel</button>
+      <button type="submit" class="btn btn-primary ml-2">Confirm remove</button>
+  </div>
+ </div>
+  
+ </div>
+
+    
+
+</body>
+</html>
+

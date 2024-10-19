@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Addresses - Retailers Account - Grab and Go Plus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/custom-grabandgoplus.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<script> 
+$(function(){
+$("#header-retailer").load("header-retailer.html");
+$("#footer").load("footer.html"); 
+});
+</script>  
+</head>
+<body class="customer-account">
+<div id="header-retailer"></div>     
+<main> 
+<div class="main-wrapper">
+
+<div class="customer-account-details">
+<div class="sidebar">
+<h4>My Account</h4>
+<nav class="vertical-menu">
+  <ul>
+    <li><a href="retailer-account-loginsecurity.html"><span class="icon"><img src="images/login-security-icon.svg" alt="" class="svg"></span><span class="title">Login and Security</span></a></li>
+    <li class="active"><a href="retailer-account-address.html"><span class="icon"><img src="images/address-icon.svg" alt="" class="svg"></span><span class="title">Your Addresses</span></a></li>
+    <li><a href="retailer-account-payment-options.html"><span class="icon"><img src="images/payment-options-icon.svg" alt="" class="svg"></span><span class="title">Payment Options</span></a></li>
+    <li><a href="retailer-account-order-history.html"><span class="icon"><img src="images/order-history-icon.svg" alt="" class="svg"></span><span class="title">Order History</span></a></li>
+  </ul>
+  <hr>
+  <ul class="addon-link">   
+   <li><a href="retailer-account-place-new-order.html"><span class="icon"><img src="images/new-order-icon.svg" alt="" class="svg"></span><span class="title">Place New Order</span></a></li>
+    <li><a href="retailer-account-activations.html"><span class="icon"><img src="images/activation-icon.svg" alt="" class="svg"></span><span class="title">Activation</span></a></li>
+    </ul>
+  </nav>
+</div> 
+<div class="account-content">
+  <div class="heading d-flex justify-content-between mb-md-4 mb-2 mt-2 mt-sm-0 justify-content-end">
+    <h3>Your Addresses</h3>
+    <p>Retailer</p>
+    </div>
+<div class="content-block account-address">
+  <div class="row">
+  <div class="col-md-6 col-xl-3">
+    <a href="#" class="add-newaddress">
+<div class="border-box justify-content-center align-items-center">
+ <div class="address-box add-address">  
+  <img src="images/add-plus-icon.svg" class="svg" alt="">
+  <span>Add Address</span>
+</div>
+</div>
+</a>
+</div>
+<div class="col-md-6 col-xl-3">
+  <div class="border-box">
+   <div class="address-box">
+    <div class="default">Default</div>
+  <div class="name">Jone Stephen</div>
+  <div class="address">
+  9071-5533 Quebec Inc.<br>
+  306 Saint-Antoine Est<br>
+  Montréal Quebec H2Y1A3
+  </div>
+  <div class="phone">
+  Phone: 514-667-0716
+  </div>
+  </div>
+  <div class="cta-btn">
+    <a href="#" class="edit-address">Edit</a>
+    <a href="#" class="remove-address">Remove</a>  
+  </div>
+  </div>
+  </div>
+  <div class="col-md-6 col-xl-3">
+    <div class="border-box">
+      <div class="address-box">
+     <div class="name">Jone Stephen</div>
+     <div class="address">
+     9071-5533 Quebec Inc.<br>
+     306 Saint-Antoine Est<br>
+     Montréal Quebec H2Y1A3
+     </div>
+     <div class="phone">
+     Phone: 514-667-0716
+     </div>
+     </div>
+     <div class="cta-btn">
+       <a href="#" class="edit-address">Edit</a>
+       <a href="#" class="remove-address">Remove</a>    
+       <a href="#" class="">Set as Default</a>
+     </div>
+     </div>
+    </div>
+    <div class="col-md-6 col-xl-3">
+      <div class="border-box">
+        <div class="address-box">
+       <div class="name">Jone Stephen</div>
+       <div class="address">
+       9071-5533 Quebec Inc.<br>
+       306 Saint-Antoine Est<br>
+       Montréal Quebec H2Y1A3
+       </div>
+       <div class="phone">
+       Phone: 514-667-0716
+       </div>
+       </div>
+       <div class="cta-btn">
+         <a href="#" class="edit-address">Edit</a>
+         <a href="#" class="remove-address">Remove</a>   
+         <a href="#" class="">Set as Default</a> 
+       </div>
+       </div>
+      </div>
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</main>    
+
+<div id="footer"></div>
+
+
+<!--plan modal Add New Address  edit-loginsecurity-box-->
+<div class="user-modal add-newaddress-box address-box-modal">
+  <div class="header"><h4>Add New Address</h4><button class="close-modal-btn"><img src="images/close-icon-small.svg" alt="" class="svg"></button></div>
+  <div class="content p-4">
+   <form action="">
+     <div class="row">
+     <div class="col-md-4 mb-3">
+         <label for="firstname" class="form-label">First name*</label>
+         <input type="text" class="form-control" id="firstname">
+       </div> 
+       <div class="col-md-4 mb-3">
+         <label for="lastname" class="form-label">Last name*</label>
+         <input type="text" class="form-control" id="lastname">
+       </div> 
+       <div class="col-md-4 mb-3">
+         <label for="dateofbirth" class="form-label">Date of Birth*</label>
+         <input type="text" class="form-control" id="dateofbirth">
+       </div> 
+       <div class="col-md-6 mb-3">
+        <label for="addressline1" class="form-label">Address Line 1*</label>
+        <input type="text" class="form-control" id="addressline1">
+      </div> 
+      <div class="col-md-6 mb-3">
+        <label for="addressline2" class="form-label">Address Line 2*</label>
+        <input type="text" class="form-control" id="addressline2">
+      </div> 
+      <div class="col-12 mb-3">
+        <label for="companyname" class="form-label">Company Name*</label>
+        <input type="text" class="form-control" id="companyname">
+      </div> 
+       <div class="col-md-4 mb-3">
+          <label for="city" class="form-label">City*</label>
+          <input type="text" class="form-control" id="city">
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="Country" class="form-label">Country</label>
+          <input type="text" class="form-control" id="Country">
+        </div> 
+        <div class="col-md-4 mb-3">
+          <label for="province" class="form-label">Province</label>
+          <input type="text" class="form-control" id="province">
+        </div> 
+        <div class="col-md-6 mb-3">
+          <label for="postalzipcode" class="form-label">Postal/Zip Code*</label>
+          <input type="number" class="form-control" id="postalzipcode">
+        </div> 
+        <div class="col-md-6 mb-3">
+          <label for="phone" class="form-label">Phone*</label>
+          <input type="number" class="form-control" id="phone">
+        </div> 
+       </div>
+   </form>
+   <div class="d-flex my-2 justify-content-end">
+      <button type="submit" class="btn btn-primary">Add Address</button>
+  </div>
+ </div>
+  
+ </div>
+
+<!--plan modal Edit Address-->
+<div class="user-modal edit-address-box address-box-modal">
+  <div class="header"><h4>Add New Address</h4><button class="close-modal-btn"><img src="images/close-icon-small.svg" alt="" class="svg"></button></div>
+  <div class="content p-4">
+   <form action="">
+     <div class="row">
+     <div class="col-md-4 mb-3">
+         <label for="firstname" class="form-label">First name*</label>
+         <input type="text" class="form-control" id="firstname" placeholder="Jone">
+       </div> 
+       <div class="col-md-4 mb-3">
+         <label for="lastname" class="form-label">Last name*</label>
+         <input type="text" class="form-control" id="lastname" placeholder="Stephen">
+       </div> 
+       <div class="col-md-4 mb-3">
+         <label for="dateofbirth" class="form-label">Date of Birth*</label>
+         <input type="text" class="form-control" id="dateofbirth" placeholder="DOB">
+       </div> 
+       <div class="col-md-6 mb-3">
+        <label for="addressline1" class="form-label">Address Line 1*</label>
+        <input type="text" class="form-control" id="addressline1" placeholder="Address line 1">
+      </div> 
+      <div class="col-md-6 mb-3">
+        <label for="addressline2" class="form-label">Address Line 2*</label>
+        <input type="text" class="form-control" id="addressline2" placeholder="Address line 2">
+      </div> 
+      <div class="col-12 mb-3">
+        <label for="companyname" class="form-label">Company Name*</label>
+        <input type="text" class="form-control" id="companyname" placeholder="Grab & Go Plus">
+      </div> 
+       <div class="col-md-4 mb-3">
+          <label for="city" class="form-label">City*</label>
+          <input type="text" class="form-control" id="city" placeholder="Quebec">
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="Country" class="form-label">Country</label>
+          <input type="text" class="form-control" id="Country" placeholder="Canada">
+        </div> 
+        <div class="col-md-4 mb-3">
+          <label for="province" class="form-label">Province</label>
+          <input type="text" class="form-control" id="province" placeholder="Montreal">
+        </div> 
+        <div class="col-md-6 mb-3">
+          <label for="postalzipcode" class="form-label">Postal/Zip Code*</label>
+          <input type="number" class="form-control" id="postalzipcode" placeholder="0123456">
+        </div> 
+        <div class="col-md-6 mb-3">
+          <label for="phone" class="form-label">Phone*</label>
+          <input type="number" class="form-control" id="phone" placeholder="514-667-0716">
+        </div> 
+       </div>
+   </form>
+   <div class="d-flex my-2 justify-content-end">
+      <button type="submit" class="btn btn-primary">Edit Address</button>
+  </div>
+ </div>
+  
+ </div>
+
+  
+<!--plan modal Remove Address-->
+<div class="user-modal remove-address-box">
+  <div class="header"><h4>Remove Address</h4><button class="close-modal-btn"><img src="images/close-icon-small.svg" alt="" class="svg"></button></div>
+  <div class="content p-4">
+   <form action="">
+     <div class="row">
+            <div class="col-12 mb-3">
+              <div class="account-address">
+              <div class="address-box">
+                <div class="name">Jone Stephen</div>
+                <div class="address">
+                9071-5533 Quebec Inc.<br>
+                306 Saint-Antoine Est<br>
+                Montréal Quebec H2Y1A3
+                </div>
+                <div class="phone">
+                Phone: 514-667-0716
+                </div>
+              </div>
+                
+                </div>
+                <div class="note small my-2">Please note: Deleting this address will not delete any pending orders being shipped to this address.</div>
+        </div>
+       </div>
+   </form>
+   <div class="d-flex my-2 justify-content-end">
+    <button type="submit" class="btn btn-outline-secondary">No</button>
+      <button type="submit" class="btn btn-primary ml-2">Yes</button>
+  </div>
+ </div>
+  
+ </div>
+    
+
+</body>
+</html>
+

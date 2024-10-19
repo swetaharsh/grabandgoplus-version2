@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Place New Order Cart - Retailer Account - Grab and Go Plus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/custom-grabandgoplus.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<script> 
+$(function(){
+$("#header-retailer").load("header-retailer.html");
+$("#footer").load("footer.html"); 
+});
+</script>  
+</head>
+<body class="customer-account">
+<div id="header-retailer"></div>     
+<main> 
+<div class="main-wrapper">
+
+<div class="customer-account-details">
+<div class="sidebar">
+<h4>My Account</h4>
+<nav class="vertical-menu">
+  <ul>
+    <li><a href="retailer-account-loginsecurity.html"><span class="icon"><img src="images/login-security-icon.svg" alt="" class="svg"></span><span class="title">Login and Security</span></a></li>
+    <li><a href="retailer-account-address.html"><span class="icon"><img src="images/address-icon.svg" alt="" class="svg"></span><span class="title">Your Addresses</span></a></li>
+    <li><a href="retailer-account-payment-options.html"><span class="icon"><img src="images/payment-options-icon.svg" alt="" class="svg"></span><span class="title">Payment Options</span></a></li>
+    <li><a href="retailer-account-order-history.html"><span class="icon"><img src="images/order-history-icon.svg" alt="" class="svg"></span><span class="title">Order History</span></a></li>
+  </ul>
+  <hr>
+  <ul class="addon-link">   
+   <li class="active"><a href="retailer-account-place-new-order.html"><span class="icon"><img src="images/new-order-icon.svg" alt="" class="svg"></span><span class="title">Place New Order</span></a></li>
+    <li><a href="retailer-account-activations.html"><span class="icon"><img src="images/activation-icon.svg" alt="" class="svg"></span><span class="title">Activation</span></a></li>
+    </ul>
+</nav>
+</div> 
+<div class="account-content">
+  <div class="heading d-flex justify-content-between mb-md-4 mb-2 mt-2 mt-sm-0 justify-content-end">
+    <h3>Place New Order</h3>
+    <p>Retailer</p>
+    </div>
+<div class="content-block order-history new-order">
+  <div class="row justify-content-between"> 
+    <div class="col-lg-7 col-xl-6">   
+      <div class="content">
+      <div class="shipping-details">
+        <div class="user-data">
+          <p class="title heading">Shipping Details</p>
+          <div class="personal-info active">
+       <p class="user-info title mr-2">Harshad Prajapati <br>
+        B/602, Syamved Saffire, <br>
+        Zundal, Gandhinagar, 382421 <br>
+        Gujarat,<br>
+        India<br>
+      </p>
+      <p class="user-id title">swetaharsh63@gmail.com</p>
+      </div>
+      
+      
+      <div class="shipping-info-add">
+        <form action="">
+          <div class="row d-flex">
+          <div class="col-12 col-md-6 mb-3">
+            <label for="firstname" class="form-label">First Name *</label>
+            <input type="text" class="form-control" id="firstname">
+          </div> 
+          <div class="col-12 col-md-6 mb-3">
+            <label for="lastname" class="form-label">Last Name *</label>
+            <input type="text" class="form-control" id="lastname">
+          </div>  
+          <div class="col-12 col-md-6 mb-3">
+            <label for="addressline1" class="form-label">Address Line 1 *</label>
+            <input type="text" class="form-control" id="addressline1">
+          </div> 
+          <div class="col-12 col-md-6 mb-3">
+            <label for="addressline2" class="form-label">Address Line 2 *</label>
+            <input type="text" class="form-control" id="addressline2">
+          </div> 
+          <div class="col-12 col-md-12 mb-3">
+            <label for="companyname" class="form-label">Company Name *</label>
+            <input type="text" class="form-control" id="companyname">
+          </div> 
+          <div class="col-12 col-md-4 mb-3">
+            <label for="city" class="form-label">City *</label>
+            <input type="text" class="form-control" id="city">
+          </div> 
+          <div class="col-12 col-md-4 mb-3">
+            <label for="country" class="form-label">Country</label>
+            <input type="text" class="form-control" id="country">
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <label for="province" class="form-label">Province</label>
+            <input type="text" class="form-control" id="province">
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <label for="postalcode" class="form-label">Postal/Zip Code *</label>
+            <input type="text" class="form-control" id="postalcode">
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <label for="phone" class="form-label">Phone *</label>
+            <input type="text" class="form-control" id="phone">
+          </div>
+          <div class="col-12">
+            <button type="submit" class="add btn btn-primary my-3">Add</button>
+            </div>
+        </div> 
+        </form>
+      </div>
+      
+      
+      <div class="shipping-info-edit">
+        <form action="">
+          <div class="row d-flex">
+          <div class="col-12 col-md-6 mb-3">
+            <label for="firstname" class="form-label">First Name *</label>
+            <input type="text" class="form-control" id="firstname">
+          </div> 
+          <div class="col-12 col-md-6 mb-3">
+            <label for="lastname" class="form-label">Last Name *</label>
+            <input type="text" class="form-control" id="lastname">
+          </div>  
+          <div class="col-12 col-md-6 mb-3">
+            <label for="addressline1" class="form-label">Address Line 1 *</label>
+            <input type="text" class="form-control" id="addressline1">
+          </div> 
+          <div class="col-12 col-md-6 mb-3">
+            <label for="addressline2" class="form-label">Address Line 2 *</label>
+            <input type="text" class="form-control" id="addressline2">
+          </div> 
+          <div class="col-12 col-md-12 mb-3">
+            <label for="companyname" class="form-label">Company Name *</label>
+            <input type="text" class="form-control" id="companyname">
+          </div> 
+          <div class="col-12 col-md-4 mb-3">
+            <label for="city" class="form-label">City *</label>
+            <input type="text" class="form-control" id="city">
+          </div> 
+          <div class="col-12 col-md-4 mb-3">
+            <label for="country" class="form-label">Country</label>
+            <input type="text" class="form-control" id="country">
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <label for="province" class="form-label">Province</label>
+            <input type="text" class="form-control" id="province">
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <label for="postalcode" class="form-label">Postal/Zip Code *</label>
+            <input type="text" class="form-control" id="postalcode">
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <label for="phone" class="form-label">Phone *</label>
+            <input type="text" class="form-control" id="phone">
+          </div>
+          <div class="col-12">
+            <button type="submit" class="add btn btn-primary my-3">Edit</button>
+            </div>
+        </div> 
+        </form>
+      </div>
+      </div>
+      <hr class="my-4">
+      </div>
+      
+      <div class="shipping-details payment-info">
+      
+        <div class="user-data">
+          <p class="title heading m-0">Payment</p>
+          <p class="small">All transactions are secure and encrypted.</p>
+         
+          <div class="payment-type mb-4">
+            <button class="creditcard cards active"><i class="circle filled">&nbsp;</i>Credit Card</button>
+            <button class="banktransfer cards"><i class="circle filled">&nbsp;</i>Bank Transfer</button>
+            </div>
+            
+      <div class="credit-card-info active">
+       <ul class="cards mb-4">
+        <li><img src="images/visa-icon.png" alt=""></li>
+        <li><img src="images/mastercard-icon.png" alt=""></li>
+        <li><img src="images/amex-icon.png" alt=""></li>
+        <li><img src="images/discover-icon.png" alt=""></li>
+       </ul> 
+      
+      <form action="">
+        <div class="row">
+        <div class="col-12 mb-3">
+          <label for="cardholdername" class="form-label">Cardholder name*</label>
+          <input type="text" class="form-control" id="cardholdername">
+        </div> 
+        <div class="col-12 mb-3">
+          <label for="cardnumber" class="form-label">Card number*</label>
+          <input type="number" class="form-control" id="cardnumber*">
+        </div> 
+        <div class="col-sm-12 col-md-6 mb-3">
+          <label for="Email" class="form-label">Expiration date (MM / YY)</label>
+          <input type="text" class="form-control" id="Email">
+        </div> 
+        <div class="col-sm-12 col-md-6 mb-3">
+          <label for="securitycode" class="form-label">Security code</label>
+          <input type="number" class="form-control" id="securitycode">
+        </div>
+      </div>
+      </form>
+      
+      <div class="billing-address-add mt-4">
+        
+        <form action="">
+          <div class="d-flex"><p class="title heading d-flex">Shipping Details</p></div>
+          <div class="row d-flex">
+          <div class="col-12 col-md-6 mb-3">
+            <label for="firstname" class="form-label">First Name *</label>
+            <input type="text" class="form-control" id="firstname">
+          </div> 
+          <div class="col-12 col-md-6 mb-3">
+            <label for="lastname" class="form-label">Last Name *</label>
+            <input type="text" class="form-control" id="lastname">
+          </div>  
+          <div class="col-12 col-md-6 mb-3">
+            <label for="addressline1" class="form-label">Address Line 1 *</label>
+            <input type="text" class="form-control" id="addressline1">
+          </div> 
+          <div class="col-12 col-md-6 mb-3">
+            <label for="addressline2" class="form-label">Address Line 2 *</label>
+            <input type="text" class="form-control" id="addressline2">
+          </div> 
+          <div class="col-12 col-md-12 mb-3">
+            <label for="companyname" class="form-label">Company Name *</label>
+            <input type="text" class="form-control" id="companyname">
+          </div> 
+          <div class="col-12 col-md-4 mb-3">
+            <label for="city" class="form-label">City *</label>
+            <input type="text" class="form-control" id="city">
+          </div> 
+          <div class="col-12 col-md-4 mb-3">
+            <label for="country" class="form-label">Country</label>
+            <input type="text" class="form-control" id="country">
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <label for="province" class="form-label">Province</label>
+            <input type="text" class="form-control" id="province">
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <label for="postalcode" class="form-label">Postal/Zip Code *</label>
+            <input type="text" class="form-control" id="postalcode">
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <label for="phone" class="form-label">Phone *</label>
+            <input type="text" class="form-control" id="phone">
+          </div>
+        </div> 
+        </form>
+      </div>
+      
+      
+      </div>
+      
+      <div class="bank-transfer-info"> 
+       <form action="">
+         <div class="row">
+         <div class="col-12 mb-3">
+           <label for="accountholdername" class="form-label">Account Holder Name *</label>
+           <input type="text" class="form-control" id="accountholdername">
+         </div> 
+         <div class="col-12 mb-3">
+           <label for="email" class="form-label">Email *</label>
+           <input type="email" class="form-control" id="email*">
+         </div>  
+       </div>
+       <div class="add-edit-info justify-content-start">
+        <p class="small">Once your order is complete, you will receive details by email on how to complete your payment.</p>  
+       </div>
+       </form>
+       </div>
+      </div>
+      </div>
+      
+      
+      
+      <div class="d-flex mt-2">
+      <a href="retailer-account-place-new-order-thankyou.html" class="btn btn-primary my-3">Make Payment</a>
+      </div>
+      
+      
+      </div>
+      </div>
+      <div class="col-lg-5 col-xl-5">
+
+        <div class="cart-info order-summary">
+          <h3>Order Summary</h3>
+          <div class="cart-details cart">
+            <div class="browse-btn">
+            <figure><img src="images/sim-thumb.jpg" alt=""></figure>
+            <p>Koodo Sim Card $50 Bundle <small>$15.00</small></p>            
+            </div>
+            <div class="shipping-price subtotal"><span>Subtotal</span>$1500.00</div>
+            <div class="shipping-price"><span>Shipping</span>Enter shipping address</div>
+             </div>
+               <div class="cart-footer">
+                  <div class="total title">Total: $1500.00</div>
+                  </div>
+          </div>
+      </div>
+
+
+
+
+
+</div>
+</div>
+</div>
+
+
+</div>
+
+</div>
+</main>    
+
+<div id="footer"></div>
+
+
+<script>
+  $('.add').click(function () {		
+var th = $(this).closest('.quantity-box').find('.count');    	
+th.val(+th.val() + 1);
+});
+$('.sub').click(function () {
+var th = $(this).closest('.quantity-box').find('.count');    	
+    if (th.val() > 1) th.val(+th.val() - 1);
+});
+</script>
+
+
+</body>
+</html>
+
