@@ -690,6 +690,12 @@ section {
   margin: 1em 0;
 }
 
+.support-info.carrier-info a {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 400;
+}
+
 /*retailer*/
 .hero-content-retailer {
   max-height: 450px;
