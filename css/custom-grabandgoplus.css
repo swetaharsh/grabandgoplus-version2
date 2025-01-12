@@ -358,6 +358,10 @@ header.sticky {
   margin: 0 1em;
 }
 
+.login-shop a.active {
+  color: #0096D4;
+}
+
 .login-shop a:hover {
   color: #0096D4;
 }
@@ -3095,6 +3099,190 @@ button.cards, button.cards:focus, button.cards:active {
   margin: 0;
 }
 
+/*promotion page*/
+.red {
+  color: red;
+}
+
+.condition-box {
+  background: #fff;
+  padding: 1.5em 1em;
+  border-radius: 10px;
+}
+
+.condition-box li {
+  padding-bottom: 0.5em;
+}
+
+.promoplan-box {
+  background: #fff;
+  border: #1C5291 solid 1px;
+  padding: 0;
+  border-radius: 10px;
+  margin-bottom: 3em;
+  display: flex;
+  height: 100%;
+}
+
+.promoplan-box .img-box {
+  position: relative;
+  width: 30%;
+}
+
+.promoplan-box .img-box img {
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.promoplan-box .img-box h4 {
+  position: absolute;
+  background: #fff;
+  border-radius: 30px;
+  top: 20px;
+  right: 20px;
+  padding: 0.5em 1em;
+}
+
+.promoplan-box .plan-details {
+  width: 35%;
+  padding: 2em;
+}
+
+.promoplan-box .plan-details .data {
+  display: inline;
+  color: #2C3034;
+}
+
+.promoplan-box .plan-details .data h3 {
+  color: #0096D4;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+}
+
+.promoplan-box .plan-details .plan-price {
+  margin-bottom: 1em;
+}
+
+.promoplan-box .plan-details .plan-price .old-price {
+  color: red;
+  text-decoration: line-through;
+  font-size: 1.125em;
+}
+
+.promoplan-box .plan-details .plan-price .new-price {
+  font-size: 3em;
+  font-weight: 700;
+  color: #1C5291;
+}
+
+.promoplan-box .plan-details .plan-price .new-price small {
+  font-size: 0.4em;
+  font-weight: 400;
+}
+
+.promoplan-box .plan-details ul li {
+  font-size: 1.125em;
+  line-height: 1.2em;
+  margin-bottom: 0.8em;
+  position: relative;
+  padding-left: 1.2em;
+}
+
+.promoplan-box .plan-details ul li:before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #0096D4;
+  border-radius: 30px;
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+.promoplan-box .plan-details h4 {
+  display: none;
+}
+
+.promoplan-box .plan-details .btn {
+  padding: 12px 15px;
+}
+
+.promoplan-box .plan-line-box {
+  width: 3%;
+  background: #D9D9D9;
+  width: 1px;
+  margin: 2em 1em;
+}
+
+.promoplan-box .promo-included {
+  width: 32%;
+  padding: 2em;
+}
+
+.promoplan-box .promo-included h4 {
+  border-bottom: #2C3034 solid 2px;
+  display: inline-flex;
+  margin-bottom: 1em;
+  line-height: 2;
+}
+
+.promoplan-box .promo-included .promo-code h6 {
+  color: #2C3034;
+  border: #D8D8D8 solid 1px;
+  border-radius: 6px;
+  font-size: 1em;
+  display: inline-flex;
+  min-width: 235px;
+  padding: 10px 15px;
+  margin-bottom: 1em;
+}
+
+.hero-container {
+  max-width: 1600px;
+}
+
+.hero-container .hero-banner {
+  background: url("../images/hero-bg.jpg");
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  border-radius: 20px;
+  margin-bottom: 4em;
+}
+
+.hero-container .hero-banner .content {
+  color: #fff;
+  margin: auto 1em auto 5em;
+  width: 50%;
+}
+
+.hero-container .hero-banner .content h4 {
+  color: #fff;
+  border-radius: 30px;
+  background: #FBB500;
+  padding: 10px 20px;
+  display: inline-flex;
+  margin-bottom: 1.2em;
+}
+
+.hero-container .hero-banner .content h1 {
+  font-size: 4.6em;
+  color: #fff;
+  line-height: 1;
+  margin: 0;
+}
+
+.hero-container .hero-banner .content p {
+  font-size: 1.875em;
+  color: #fff;
+}
+
+.hero-container .hero-banner .hero-img {
+  position: relative;
+}
+
 /*responsiveness*/
 @media screen and (max-width: 1200px) {
   .hero-banner {
@@ -3247,6 +3435,12 @@ button.cards, button.cards:focus, button.cards:active {
   .new-order .order-summary {
     padding: 0.5em;
   }
+  .hero-container .hero-banner img {
+    height: auto;
+  }
+  .hero-container .hero-banner .content h1 {
+    font-size: 3.5em;
+  }
 }
 /*ipad*/
 @media (max-width: 991px) {
@@ -3351,6 +3545,22 @@ button.cards, button.cards:focus, button.cards:active {
   }
   .customer-account .sidebar .addon-link li a {
     padding: 0.6em 1em;
+  }
+  .promoplan-box .img-box, .hero-container .hero-banner .hero-img {
+    display: none;
+  }
+  .hero-container .hero-banner .content {
+    width: 100%;
+    margin: 2em;
+  }
+  .promoplan-box .plan-details h4 {
+    display: inline-block;
+    position: relative;
+    background: #1C5291;
+    color: #fff;
+    border-radius: 30px;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3481,6 +3691,9 @@ button.cards, button.cards:focus, button.cards:active {
   }
   .customer-account .new-order .order-history-row .order-type:nth-child(4) {
     min-width: 15%;
+  }
+  .promoplan-box .plan-details {
+    width: 50%;
   }
 }
 /*mobile*/
@@ -3950,6 +4163,25 @@ button.cards, button.cards:focus, button.cards:active {
   }
   .new-order .browse-btn figure {
     width: 100px;
+  }
+  .hero-container .hero-banner .content {
+    margin: 2em;
+    width: 100%;
+  }
+  .promoplan-box .plan-line-box {
+    display: none;
+  }
+  .promoplan-box .plan-details, .promoplan-box .promo-included {
+    width: 100%;
+  }
+  .promoplan-box .promo-included {
+    padding-top: 0;
+  }
+  .promoplan-box {
+    flex-direction: column;
+  }
+  .hero-container .hero-banner .content h1 {
+    font-size: 3.4em;
   }
 }
 @media (max-width: 567px) {
