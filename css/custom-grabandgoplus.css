@@ -3268,7 +3268,7 @@ button.cards, button.cards:focus, button.cards:active {
 }
 
 .hero-container .hero-banner .content h1 {
-  font-size: 4.6em;
+  font-size: 4.5em;
   color: #fff;
   line-height: 1;
   margin: 0;
@@ -3281,6 +3281,21 @@ button.cards, button.cards:focus, button.cards:active {
 
 .hero-container .hero-banner .hero-img {
   position: relative;
+}
+
+.skucode {
+  background: #F2F3F7;
+  border: none;
+  font-size: 1em;
+  color: #2C3034;
+  border-radius: 6px;
+  padding: 5px 12px !important;
+  display: inline-block;
+}
+
+.skucode b {
+  font-weight: 600;
+  color: #1C5291;
 }
 
 /*responsiveness*/
