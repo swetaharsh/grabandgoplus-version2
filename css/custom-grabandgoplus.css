@@ -3132,6 +3132,8 @@ button.cards, button.cards:focus, button.cards:active {
 .promoplan-box .img-box img {
   height: 100%;
   border-radius: 10px 0 0 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .promoplan-box .img-box h4 {
@@ -3290,12 +3292,13 @@ button.cards, button.cards:focus, button.cards:active {
   color: #2C3034;
   border-radius: 6px;
   padding: 5px 12px !important;
-  display: inline-block;
+  display: inline-flex;
 }
 
 .skucode b {
   font-weight: 600;
   color: #1C5291;
+  padding-left: 2px;
 }
 
 /*responsiveness*/
