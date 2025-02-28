@@ -3155,6 +3155,18 @@ button.cards, button.cards:focus, button.cards:active {
   color: #2C3034;
 }
 
+.promoplan-box .plan-details .data.esim {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.promoplan-box .plan-details .data.esim .skucode {
+  border: #00A0E3 solid 1px;
+}
+
 .promoplan-box .plan-details .data h3 {
   color: #0096D4;
   font-weight: 700;
@@ -3221,6 +3233,7 @@ button.cards, button.cards:focus, button.cards:active {
 .promoplan-box .promo-included {
   width: 32%;
   padding: 2em;
+  position: relative;
 }
 
 .promoplan-box .promo-included h4 {
@@ -3300,6 +3313,17 @@ button.cards, button.cards:focus, button.cards:active {
   color: #1C5291;
   padding-left: 2px;
 }
+
+.promoplan-box .promo-included .promo-code {
+  margin-bottom: 20px;
+}
+
+.carrier-provider {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.qr-code img{ height: auto; width: 100px;}
 
 /*responsiveness*/
 @media screen and (max-width: 1200px) {
