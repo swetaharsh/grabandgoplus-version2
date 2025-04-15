@@ -103,6 +103,9 @@ $('.remove-paymentopt').click(function() {
   $('.remove-paymentoption-box').addClass('active-modal');
   $('body').addClass('light-overlay');
 });
+$('.close-btn').click(function() {
+    $('.offer-line').hide();
+});
 $('.close-modal-btn').click(function() {
 $('.user-modal').removeClass('active-modal');;
 $('body').removeClass('light-overlay');
