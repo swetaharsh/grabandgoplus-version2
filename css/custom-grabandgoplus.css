@@ -3323,7 +3323,22 @@ button.cards, button.cards:focus, button.cards:active {
   bottom: 30px;
   right: 30px;
 }
-.qr-code img{ height: auto; width: 100px;}
+
+.offer-line {
+  background: #e0f4ff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+}
+
+.offer-line .offer-modal {
+  color: #1C5291;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /*responsiveness*/
 @media screen and (max-width: 1200px) {
@@ -3603,6 +3618,9 @@ button.cards, button.cards:focus, button.cards:active {
     border-radius: 30px;
     padding: 0.5em 1em;
     margin-bottom: 1em;
+  }
+  .offer-line .offer-modal {
+    font-size: 13px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
