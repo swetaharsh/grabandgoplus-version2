@@ -3330,7 +3330,7 @@ button.cards, button.cards:focus, button.cards:active {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 9;
+  z-index: 1;
 }
 
 .offer-line .offer-modal {
