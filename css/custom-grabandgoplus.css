@@ -2029,6 +2029,27 @@ button.cards, button.cards:focus, button.cards:active {
   opacity: 1;
 }
 
+.activatesim .esim-activation-box h6 {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #1C5291;
+  margin: 0;
+}
+
+.activatesim .esim-activation-box p {
+  font-size: 1.125em;
+  margin: 0;
+}
+
+.activatesim .esim-activation-box .howtofind-box {
+  display: inline-block;
+  border: #1C5291 solid 1px;
+  border-width: 1px 1px 1px 5px;
+  padding: 1em;
+  box-shadow: #1C5291 2px 2px 10px;
+  margin: 0.5em 0 2em 0;
+}
+
 /**/
 .anonymus-page, .anonymus-page .main-wrapper {
   background: #2C3034;
