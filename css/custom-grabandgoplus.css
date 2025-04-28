@@ -152,7 +152,7 @@ p.small {
   padding: 20px 20px;
 }
 
-.btn-primary, .btn-secondary, .btn-outline-primary, .btn-outline-secondary, input[type=submit] {
+.btn-primary, .btn-light, .btn-secondary, .btn-outline-primary, .btn-outline-secondary, input[type=submit] {
   color: #fff;
   background-color: #1C5291;
   border-color: #1C5291;
@@ -160,6 +160,12 @@ p.small {
   font-weight: 500;
   line-height: 1.2;
   border-radius: 6px;
+}
+
+.btn-light {
+  border-color: #F2F3F7;
+  color: #888888;
+  background: #F2F3F7;
 }
 
 .btn-outline-secondary {
@@ -256,7 +262,7 @@ header .phone-text {
   gap: 20px;
 }
 
-#header + div, #header + section, #header + main, #header-retailer + div, #header-retailer + section, #header-retailer + main {
+#header + div, #header + section, #header + main, #header-retailer + div, #header-retailer + section, #header-retailer + main, #admin-header-retailer + section, #admin-header-retailer + main {
   margin-top: 85px;
 }
 
@@ -943,7 +949,7 @@ section {
 }
 
 .main-wrapper {
-  padding: 4em 0;
+  padding: 6em 0 4em 0;
 }
 
 button.accordion {
@@ -1220,6 +1226,39 @@ button.accordion.is-open:after {
   align-items: flex-start;
 }
 
+.cart-info .cart-details .browse-btn .plan-box {
+  border: #D9D9D9 solid 1px;
+  min-width: 130px;
+  min-height: 90px;
+  padding: 1em;
+  margin-right: 1em;
+  border-radius: 6px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-info .cart-details .browse-btn .plan-box .esim-title {
+  background: #F0F0F0;
+  padding: 1px 4px;
+  color: #0096D4;
+  font-size: 1.125em;
+  font-weight: 600;
+  max-width: 48px;
+  margin-bottom: 0.5em;
+  border-radius: 4px;
+}
+
+.cart-info .cart-details .browse-btn .plan-box .data {
+  color: #0096D4;
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+.cart-info .cart-details .browse-btn .plan-box .speed {
+  font-size: 12px;
+}
+
 .cart-info .cart-details .browse-btn p {
   width: 50%;
   font-size: 1.125em;
@@ -1491,81 +1530,6 @@ body.light-overlay:after {
   color: #1C5291;
 }
 
-.order-summary {
-  border: #AEAEAE solid 1px;
-  padding: 2em;
-  border-radius: 10px;
-}
-
-.order-summary.cart-info .cart-details {
-  border: none;
-}
-
-.order-summary.cart-info h2 {
-  font-size: 1.875em;
-  font-weight: 500;
-  color: #1C5291;
-  border-bottom: #0096D4 solid 4px;
-  line-height: 2em;
-}
-
-.order-summary.cart-info .cart-details .browse-btn {
-  max-width: 100%;
-  min-width: 100%;
-  display: flex;
-}
-
-.order-summary.cart-info .cart-details .browse-btn p {
-  width: auto;
-  font-size: 1.25em;
-  margin-bottom: 0;
-  padding: 0;
-  line-height: 1.5;
-  line-height: 1.5;
-  display: flex;
-  flex-direction: column;
-}
-
-.order-summary.cart-info .cart-details .browse-btn p small {
-  font-weight: 600;
-  font-size: 1.125em;
-  color: #1C5291;
-  margin: 0.2em 0;
-}
-
-.order-summary.cart-info .cart-details .browse-btn p.price {
-  color: #1C5291;
-}
-
-.order-summary.cart-info .subtotal, .order-summary.cart-info .shipping-price {
-  padding: 1em 0 0.5em 0;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  font-size: 1.125em;
-  font-weight: 500;
-}
-
-.order-summary.cart-info .subtotal, .order-summary.cart-info .shipping-price.subtotal {
-  font-size: 1.25em;
-}
-
-.order-summary.cart-info .subtotal p {
-  font-weight: 600;
-  font-size: 1.25em;
-}
-
-.order-summary.cart-info hr {
-  border-color: #0096D4;
-}
-
-.order-summary.cart-info .total-price h5 {
-  font-weight: 600;
-  font-size: 1.5em;
-  display: flex;
-  justify-content: end;
-}
-
 .shipping-details hr {
   border-top: #888 solid 1px;
   opacity: 1;
@@ -1581,7 +1545,7 @@ body.light-overlay:after {
 
 .shipping-details .add-edit-info {
   display: flex;
-  justify-content: end;
+  justify-content: start;
   gap: 30px;
 }
 
@@ -1693,6 +1657,50 @@ button.cards, button.cards:focus, button.cards:active {
   margin: auto;
 }
 
+.payment-card-box .payment-card {
+  background: #fff;
+  margin-bottom: 1em;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-card-box .payment-card.active {
+  border: #1C5291 solid 1px;
+}
+
+.payment-card-box .payment-card p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.2;
+}
+
+.payment-card-box .payment-card .cards i {
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  border: #1C5291 solid 1px;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 10px 0 0;
+  position: relative;
+}
+
+.payment-card-box .payment-card.active .cards i:after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  display: block;
+  background: #1C5291;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 .bank-transfer-info {
   display: none;
 }
@@ -1715,6 +1723,114 @@ button.cards, button.cards:focus, button.cards:active {
 
 .checkout .personal-info.active {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.checkout .change-address {
+  display: flex;
+  align-items: baseline;
+}
+
+.checkout .change-address .add-edit-info {
+  justify-content: start;
+}
+
+.checkout .change-address .add-edit-info button {
+  padding: 0;
+}
+
+.checkout .change-address-box {
+  display: none;
+}
+
+.checkout a {
+  cursor: pointer;
+}
+
+.checkout .change-address-box.active {
+  display: block;
+}
+
+.modal-box.active {
+  display: block;
+}
+
+.modal-box {
+  z-index: 99;
+  top: 50%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #fff;
+  width: 650px;
+  height: auto;
+  padding: 0;
+  transform: translateY(-50%);
+  border: #E7E7E7 solid 1px;
+  border-radius: 6px;
+  display: none;
+}
+
+.shipping-info-edit.modal-box input.form-control, .shipping-info-edit.modal-box select.form-control {
+  min-height: 34px !important;
+  font-size: 14px;
+}
+
+.shipping-info-edit.modal-box label.form-label {
+  font-size: 14px;
+}
+
+.shipping-info-edit.modal-box button {
+  padding: 10px 15px;
+  font-size: 1em;
+}
+
+.shipping-info-edit.modal-box .header {
+  background: #1C5291;
+  color: #fff;
+  padding: 0.3em 1em;
+  border-radius: 6px 6px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shipping-info-edit.modal-box .header h4 {
+  color: #fff;
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 1.125em;
+  font-weight: 400;
+}
+
+.shipping-info-edit.modal-box button.close-modal-btn {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  right: inherit;
+  left: inherit;
+  background: none;
+  border: none;
+}
+
+.shipping-info-edit.modal-box .svg path {
+  fill: #fff;
+}
+
+body.overlay {
+  position: relative;
+  overflow-y: hidden;
+}
+
+body.overlay:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
 }
 
 .billing-address-add {
@@ -1723,6 +1839,43 @@ button.cards, button.cards:focus, button.cards:active {
 
 .billing-address-add.active {
   display: flex;
+}
+
+.shipping-info-edit.add-card-payment-box, .shipping-info-edit.add-billing-address-box, .shipping-info-edit.edit-retailer-detail-box {
+  width: 440px;
+}
+
+.add-billing-address-box .payment-card-box .payment-card {
+  padding: 0.5em;
+  align-items: flex-start;
+  margin-bottom: 0.5em;
+  border: #D8D8D8 solid 1px;
+  border-radius: 6px;
+}
+
+.add-billing-address-box .payment-card-box .payment-card button {
+  padding: 0 5px;
+}
+
+.add-billing-address-box .payment-card-box .payment-card p {
+  line-height: 1.2;
+  color: #666666;
+}
+
+.order-summary-box {
+  background: #E8E9ED;
+  padding: 1.5em;
+  border-radius: 10px;
+}
+
+.order-summary-box .subtotal-shipping p {
+  font-weight: 600;
+  margin: 0.2em 0;
+}
+
+.blue-line {
+  border-color: #1C5291;
+  border-width: 2px;
 }
 
 /*thank you order activation*/
@@ -3037,12 +3190,8 @@ button.cards, button.cards:focus, button.cards:active {
   flex-direction: column;
 }
 
-.new-order .browse-btn figure {
-  border: #D9D9D9 solid 1px;
-  width: 60px;
-  margin-right: 1em;
-}
-
+/*.new-order .browse-btn figure{ border:#D9D9D9 solid 1px; width: 60px;
+  margin-right: 1em;}*/
 .new-order .cart-info .cart-details.cart {
   border-top: #0096D4 solid 4px;
   border-bottom: #0096D4 solid 1px;
@@ -3361,8 +3510,204 @@ button.cards, button.cards:focus, button.cards:active {
   align-items: center;
 }
 
+i.arrowright {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+i.arrowright:after {
+  content: "";
+  display: block;
+  border-width: 1px 1px 0 0;
+  width: 7px;
+  height: 7px;
+  border-color: #1C5291;
+  border-style: solid;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+/*admin retailer page*/
+.admin-retailer .customer-account-details {
+  display: flex;
+  justify-content: center;
+}
+
+.admin-retailer .account-content {
+  width: 90%;
+}
+
+.admin-retailer .account-content .content-block {
+  padding: 2em 2em 5em 2em;
+}
+
+.admin-retailer .order-history .order-history-row.headings {
+  display: flex;
+}
+
+.admin-retailer .order-history .order-history-row {
+  gap: 10px;
+}
+
+.admin-retailer .order-history .order-history-row .retail-detail {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  text-align: left;
+  flex-direction: column;
+}
+
+.admin-retailer .order-history .order-history-row.headings span.title {
+  display: flex;
+  font-weight: 600;
+  visibility: visible;
+  height: auto;
+}
+
+.admin-retailer .order-history .order-history-row.headings span {
+  display: flex;
+  visibility: hidden;
+  height: 0;
+}
+
+.admin-retailer .order-history .order-history-row span.title {
+  display: flex;
+  font-weight: 600;
+  visibility: hidden;
+  height: 0;
+}
+
+.admin-retailer .order-history .order-history-row span {
+  display: flex;
+  font-weight: 500;
+}
+
+.admin-retailer .order-history .order-history-row span a {
+  font-weight: 500;
+  text-decoration: none !important;
+  color: #1C5291 !important;
+}
+
+.admin-retailer .order-history .order-history-row .retail-detail:nth-child(1) {
+  width: 13%;
+}
+
+.admin-retailer .order-history .order-history-row .retail-detail:nth-child(2) {
+  width: 13%;
+}
+
+.admin-retailer .order-history .order-history-row .retail-detail:nth-child(3) {
+  width: 10%;
+}
+
+.admin-retailer .order-history .order-history-row .retail-detail:nth-child(4) {
+  width: 8%;
+}
+
+.admin-retailer .order-history .order-history-row .retail-detail:nth-child(5) {
+  width: 8%;
+}
+
+.admin-retailer .order-history .order-history-row .retail-detail:nth-child(6) {
+  width: 14%;
+}
+
+.admin-retailer .order-history .order-history-row .retail-detail:nth-child(7) {
+  width: 10%;
+}
+
+.admin-retailer .order-history .order-history-row .retail-detail:nth-child(8) {
+  width: 6%;
+}
+
+.admin-retailer .order-history .order-history-row .retail-detail:nth-child(9) {
+  width: 6%;
+}
+
+.admin-retailer .order-history .order-history-row .retail-detail:nth-child(10) {
+  width: 14%;
+}
+
+.admin-retailer .retailer-details {
+  display: flex;
+}
+
+.admin-retailer .retailer-details.retailer-name .adresses p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.admin-retailer .retailer-details.retailer-name .adresses p a {
+  margin: 1em 0;
+  display: inline-flex;
+  color: #1C5291;
+}
+
+.admin-retailer .retailer-details .title {
+  font-weight: 600;
+  max-width: 150px;
+  min-width: 150px;
+  font-size: 1.125em;
+}
+
+.admin-retailer .retailer-details.order-history > .title, .admin-retailer .retailer-details.retailer-address > .title {
+  padding-top: 1em;
+}
+
+.admin-retailer .retailer-details .adresses {
+  gap: 30px;
+}
+
+.admin-retailer .retailer-details .border-box {
+  flex: inherit !important;
+  min-height: auto !important;
+  min-width: 250px;
+}
+
+.admin-retailer .retailer-details.order-history .border-box {
+  min-width: auto;
+  flex-direction: row;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.admin-retailer .retailer-details.order-history .order-history-row .order-status {
+  min-width: 10%;
+}
+
+.admin-retailer .retailer-details.retailer-terms .form-check-label {
+  font-weight: 400;
+}
+
+.admin-retailer .retailer-details.retailer-terms .adresses input {
+  max-width: 100px;
+  min-height: auto;
+}
+
+.admin-retailer .retailer-details.retailer-terms .adresses p {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-retailer .retailer-details.suspend-details .btn {
+  padding: 0.8em 1em;
+  font-size: 1em !important;
+  font-weight: 600;
+}
+
+.admin-retailer .retailer-details.retailer-terms .adresses p span {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+
 /*responsiveness*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .hero-banner {
     height: auto;
   }
@@ -3393,10 +3738,50 @@ button.cards, button.cards:focus, button.cards:active {
   .distributor .contact-section .container {
     padding: 2em;
   }
+  .admin-retailer .retailer-details.order-history .border-box {
+    display: flex;
+  }
+  .admin-retailer .retailer-details {
+    flex-direction: column;
+  }
+  .admin-retailer .retailer-details > .title {
+    margin-bottom: 1em;
+  }
+  .admin-retailer .retailer-details.account-payment .border-box, .admin-retailer .retailer-details.retailer-address .border-box {
+    max-width: 250px;
+    margin-bottom: 0;
+  }
+  .admin-retailer .retailer-details .adresses {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .admin-retailer .retailer-details.suspend-details .title {
+    display: none;
+  }
+  .customer-account .account-content .content-block .border-box {
+    padding: 1em 0.5em;
+  }
+  .admin-retailer .account-content .content-block .border-box {
+    padding: 1em 0.5em;
+    width: 100%;
+    display: inline-flex;
+  }
+  .admin-retailer .order-history .order-history-row .order-id .title {
+    display: inline !important;
+  }
 }
 @media (min-width: 768px) {
   button.hamburger, button.close-btn {
     display: none;
+  }
+}
+@media (min-width: 991px) and (max-width: 1600px) {
+  .admin-retailer .account-content {
+    width: 100%;
+    padding: 1%;
+  }
+  .admin-retailer .account-content .content-block {
+    padding: 1em;
   }
 }
 /*tablet and laptop*/
@@ -3621,6 +4006,9 @@ button.cards, button.cards:focus, button.cards:active {
   .customer-account footer {
     padding: 0em 0em 0em 4em;
   }
+  .customer-account.admin-retailer footer {
+    padding: 0em;
+  }
   .customer-account .sidebar .addon-link li a {
     padding: 0.6em 1em;
   }
@@ -3642,6 +4030,20 @@ button.cards, button.cards:focus, button.cards:active {
   }
   .offer-line .offer-modal {
     font-size: 13px;
+  }
+  .admin-retailer .order-history .order-history-row span.title {
+    visibility: visible;
+    height: auto;
+  }
+  .admin-retailer .order-history .order-history-row {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .admin-retailer .order-history .order-history-row .retail-detail {
+    width: 20% !important;
+  }
+  .admin-retailer .order-history .order-history-row .order-type {
+    width: auto;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3783,7 +4185,7 @@ button.cards, button.cards:focus, button.cards:active {
     font-size: 85%;
   }
   .main-wrapper {
-    padding: 2em 0;
+    padding: 4em 0 2em 0;
   }
   section {
     padding: 2em 0;
@@ -4055,6 +4457,7 @@ button.cards, button.cards:focus, button.cards:active {
   .cart-info .cart-details .browse-btn {
     max-width: 100%;
     margin-left: 0;
+    flex-direction: column;
   }
   .cart-info .cart-details .title span {
     padding: 0 5px 5px 0;
@@ -4264,6 +4667,50 @@ button.cards, button.cards:focus, button.cards:active {
   .hero-container .hero-banner .content h1 {
     font-size: 3.4em;
   }
+  .cart-info .cart-details .browse-btn .plan-box {
+    min-width: 110px;
+  }
+  .shipping-details p.user-info br {
+    display: block;
+  }
+  .shipping-details .change-address {
+    margin: 0;
+    padding: 0;
+  }
+  .modal-box {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 90% !important;
+    max-height: 60%;
+  }
+  .payment-info .payment-type {
+    gap: 2px;
+  }
+  .payment-info .payment-type .paycard-img {
+    width: 50px;
+    text-align: center;
+  }
+  .payment-info .payment-type p {
+    line-height: 1;
+  }
+  .payment-card-box .payment-card .cards i {
+    margin: 0;
+  }
+  .order-summary-box {
+    margin-top: 2em;
+  }
+  .customer-account footer {
+    padding: 0;
+  }
+  .admin-retailer .order-history .order-history-row .retail-detail {
+    width: 100% !important;
+  }
+  .admin-retailer .order-history .order-history-row .retail-detail {
+    display: none;
+  }
+  .admin-retailer .order-history .order-history-row .retail-detail:nth-child(1), .admin-retailer .order-history .order-history-row .retail-detail:nth-child(11), .admin-retailer .order-history .order-history-row .retail-detail:nth-child(6) {
+    display: block !important;
+  }
 }
 @media (max-width: 567px) {
   .mt-xs-2 {
@@ -4279,5 +4726,34 @@ button.cards, button.cards:focus, button.cards:active {
   .testimonials h2 {
     font-size: 2.875em;
     margin-bottom: 0.5em;
+  }
+  .customer-account .account-content .content-block.order-history .border-box, .customer-account .account-content .content-block.order-history .border-box {
+    max-width: 100%;
+    width: 100%;
+  }
+  .admin-retailer .order-history .order-history-row span.title {
+    display: inline;
+  }
+  .admin-retailer .retailer-details.order-history .border-box {
+    display: inline-block;
+  }
+  .admin-retailer .retailer-details .adresses .form-check {
+    margin-bottom: 0;
+  }
+  .admin-retailer .retailer-details .order-history-row .order-type {
+    width: 100%;
+    padding-bottom: 0.5em;
+    display: inline-block;
+  }
+  .admin-retailer .retailer-details.retailer-terms .adresses p {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 1em;
+  }
+  .admin-retailer .retailer-details.retailer-terms .adresses p span {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
   }
 }/*# sourceMappingURL=custom-grabandgoplus.css.map */
