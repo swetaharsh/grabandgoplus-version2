@@ -26,8 +26,8 @@
   <div class="backtoplan mb-3"><button onclick="history.back()">Back to plans</button></div>
 </div>
 <div class="container">
-    <div class="row">
-<div class="col-lg-7">   
+    <div class="row justify-content-between">
+<div class="col-lg-7 col-md-7">   
 <div class="content">
 <h2>Checkout</h2>
 
@@ -36,120 +36,58 @@
   <div class="user-data">
     <p class="title heading">Shipping Details</p>
     <div class="personal-info active">
- <p class="user-info title mr-2">Harshad Prajapati <br>
-  B/602, Syamved Saffire, <br>
-  Zundal, Gandhinagar, 382421 <br>
-  Gujarat,<br>
-  India<br>
+ <p class="user-info title mt">Harshad Prajapati <br>
+  <small>B/602, Syamved Saffire, Zundal, Gandhinagar, 382421 Gujarat, India</small><br>
+  <small>Email: swetaharsh63@gmail.com</small>
 </p>
-<p class="user-id title">swetaharsh63@gmail.com</p>
-</div>
-
-
-<div class="shipping-info-add">
-  <form action="">
-    <div class="row d-flex">
-    <div class="col-12 col-md-6 mb-3">
-      <label for="firstname" class="form-label">First Name *</label>
-      <input type="text" class="form-control" id="firstname">
-    </div> 
-    <div class="col-12 col-md-6 mb-3">
-      <label for="lastname" class="form-label">Last Name *</label>
-      <input type="text" class="form-control" id="lastname">
-    </div>  
-    <div class="col-12 col-md-6 mb-3">
-      <label for="addressline1" class="form-label">Address Line 1 *</label>
-      <input type="text" class="form-control" id="addressline1">
-    </div> 
-    <div class="col-12 col-md-6 mb-3">
-      <label for="addressline2" class="form-label">Address Line 2 *</label>
-      <input type="text" class="form-control" id="addressline2">
-    </div> 
-    <div class="col-12 col-md-12 mb-3">
-      <label for="companyname" class="form-label">Company Name *</label>
-      <input type="text" class="form-control" id="companyname">
-    </div> 
-    <div class="col-12 col-md-4 mb-3">
-      <label for="city" class="form-label">City *</label>
-      <input type="text" class="form-control" id="city">
-    </div> 
-    <div class="col-12 col-md-4 mb-3">
-      <label for="country" class="form-label">Country</label>
-      <input type="text" class="form-control" id="country">
-    </div>
-    <div class="col-12 col-md-4 mb-3">
-      <label for="province" class="form-label">Province</label>
-      <input type="text" class="form-control" id="province">
-    </div>
-    <div class="col-12 col-md-6 mb-3">
-      <label for="postalcode" class="form-label">Postal/Zip Code *</label>
-      <input type="text" class="form-control" id="postalcode">
-    </div>
-    <div class="col-12 col-md-6 mb-3">
-      <label for="phone" class="form-label">Phone *</label>
-      <input type="text" class="form-control" id="phone">
-    </div>
-    <div class="col-12">
-      <button type="submit" class="add btn btn-primary my-3">Add</button>
-      </div>
-  </div> 
-  </form>
-</div>
-
-
-<div class="shipping-info-edit">
-  <form action="">
-    <div class="row d-flex">
-    <div class="col-12 col-md-6 mb-3">
-      <label for="firstname" class="form-label">First Name *</label>
-      <input type="text" class="form-control" id="firstname">
-    </div> 
-    <div class="col-12 col-md-6 mb-3">
-      <label for="lastname" class="form-label">Last Name *</label>
-      <input type="text" class="form-control" id="lastname">
-    </div>  
-    <div class="col-12 col-md-6 mb-3">
-      <label for="addressline1" class="form-label">Address Line 1 *</label>
-      <input type="text" class="form-control" id="addressline1">
-    </div> 
-    <div class="col-12 col-md-6 mb-3">
-      <label for="addressline2" class="form-label">Address Line 2 *</label>
-      <input type="text" class="form-control" id="addressline2">
-    </div> 
-    <div class="col-12 col-md-12 mb-3">
-      <label for="companyname" class="form-label">Company Name *</label>
-      <input type="text" class="form-control" id="companyname">
-    </div> 
-    <div class="col-12 col-md-4 mb-3">
-      <label for="city" class="form-label">City *</label>
-      <input type="text" class="form-control" id="city">
-    </div> 
-    <div class="col-12 col-md-4 mb-3">
-      <label for="country" class="form-label">Country</label>
-      <input type="text" class="form-control" id="country">
-    </div>
-    <div class="col-12 col-md-4 mb-3">
-      <label for="province" class="form-label">Province</label>
-      <input type="text" class="form-control" id="province">
-    </div>
-    <div class="col-12 col-md-6 mb-3">
-      <label for="postalcode" class="form-label">Postal/Zip Code *</label>
-      <input type="text" class="form-control" id="postalcode">
-    </div>
-    <div class="col-12 col-md-6 mb-3">
-      <label for="phone" class="form-label">Phone *</label>
-      <input type="text" class="form-control" id="phone">
-    </div>
-    <div class="col-12">
-      <button type="submit" class="add btn btn-primary my-3">Edit</button>
-      </div>
-  </div> 
-  </form>
-</div>
-</div>
 <div class="add-edit-info">
-<button class="addaddress">Add New Shipping Address</button> 
-<button class="editaddress">Edit</button>
+  <button class="change-address">Change</button>
+  </div>
+</div>
+
+<div class="change-address-box">
+<div class="change-address payment-type">
+  <button class="creditcard cards active"><i class="circle filled">&nbsp;</i></button>
+
+<div>
+  <p class="user-info title mr-2 mb-1">Harshad Prajapati <br>
+   <small>B/602, Syamved Saffire, Zundal, Gandhinagar, 382421 Gujarat, India</small><br>
+   <small>Email: swetaharsh63@gmail.com</small>
+ </p>
+ <div class="add-edit-info mb-3">
+   <button class="edit-ship-address">Edit Address</button>
+   </div>
+ </div>
+</div>
+
+<div class="change-address payment-type">
+  <button class="creditcard cards"><i class="circle outline">&nbsp;</i></button>
+
+<div>
+  <p class="user-info title mr-2 mb-1">Harshad Prajapati <br>
+   <small>B/602, Syamved Saffire, Zundal, Gandhinagar, 382421 Gujarat, India</small><br>
+   <small>Email: swetaharsh63@gmail.com</small>
+ </p>
+ <div class="add-edit-info mb-3">
+   <button class="edit-ship-address">Edit Address</button>
+   </div>
+ </div>
+</div>
+<div class="add-edit-info mt-3">
+  <button class="add-address">Add New Shipping Address</button>
+  </div>
+
+  <div>
+    <button type="submit" class="btn btn-primary my-3">Shipping to this address</button>
+    </div>  
+</div>
+
+
+
+<div>
+</div>
+
+
 </div>
 <hr class="my-4">
 </div>
@@ -162,7 +100,7 @@
    
     <div class="payment-type mb-4">
       <button class="creditcard cards active"><i class="circle filled">&nbsp;</i>Credit Card</button>
-      <button class="banktransfer cards"><i class="circle filled">&nbsp;</i>Bank Transfer</button>
+      <button class="banktransfer cards"><i class="circle filled">&nbsp;</i>Purchase order</button>
       </div>
       
 <div class="credit-card-info active">
@@ -176,83 +114,42 @@
 <form action="">
   <div class="row">
   <div class="col-12 mb-3">
-    <label for="cardholdername" class="form-label">Cardholder name*</label>
-    <input type="text" class="form-control" id="cardholdername">
-  </div> 
-  <div class="col-12 mb-3">
-    <label for="cardnumber" class="form-label">Card number*</label>
-    <input type="number" class="form-control" id="cardnumber*">
-  </div> 
-  <div class="col-sm-12 col-md-6 mb-3">
-    <label for="Email" class="form-label">Expiration date (MM / YY)</label>
-    <input type="text" class="form-control" id="Email">
-  </div> 
-  <div class="col-sm-12 col-md-6 mb-3">
-    <label for="securitycode" class="form-label">Security code</label>
-    <input type="number" class="form-control" id="securitycode">
-  </div>
+    <div class="payment-card-box">
+      <div class="payment-card payment-type active">
+        <div class="d-flex align-items-center">
+        <button class="creditcard cards"><i class="circle filled">&nbsp;</i></button>
+        <div class="paycard-img mx-2"><img src="images/visa-icon.png" alt=""></div>
+                <p><small>HDFC Bank Credit Card ending in 0000</small></p>
+              </div>
+          <p><small>LOREM IPSUM</small></p>
+          <p><small>11/2022</small></p>
+      
+      </div>
+      <div class="payment-card payment-type">
+        <div class="d-flex align-items-center">
+        <button class="creditcard cards"><i class="circle filled">&nbsp;</i></button>
+        <div class="paycard-img mx-2"><img src="images/mastercard-icon.png" alt=""></div>
+                <p><small>Axis  Bank Credit Card ending in 0000</small></p>
+              </div>
+          <p><small>LOREM IPSUM</small></p>
+          <p><small>7/2023</small></p>
+     
+      </div>      
+      </div>
+
+
+  
+  </div>   
 </div>
 <div class="add-edit-info justify-content-start">
-  <div class="form-group form-check">
+  <a class="add-newcard">Add new credit card <i class="arrowright">&nbsp;</i></a>
+  <div class="form-group form-check mt-3">
     <input type="checkbox" class="form-check-input checkbox" id="exampleCheck1" checked="checked">
-    <label class="form-check-label" for="exampleCheck1">Use shipping address as billing address</label>
-  </div>
-<a class="add-biling-address" style="cursor:default">Add New Billing Address</a> 
-</div>
-</form>
-
-<div class="billing-address-add mt-4">
-  
-  <form action="">
-    <div class="d-flex"><p class="title heading d-flex">Shipping Details</p></div>
-    <div class="row d-flex">
-    <div class="col-12 col-md-6 mb-3">
-      <label for="firstname" class="form-label">First Name *</label>
-      <input type="text" class="form-control" id="firstname">
-    </div> 
-    <div class="col-12 col-md-6 mb-3">
-      <label for="lastname" class="form-label">Last Name *</label>
-      <input type="text" class="form-control" id="lastname">
-    </div>  
-    <div class="col-12 col-md-6 mb-3">
-      <label for="addressline1" class="form-label">Address Line 1 *</label>
-      <input type="text" class="form-control" id="addressline1">
-    </div> 
-    <div class="col-12 col-md-6 mb-3">
-      <label for="addressline2" class="form-label">Address Line 2 *</label>
-      <input type="text" class="form-control" id="addressline2">
-    </div> 
-    <div class="col-12 col-md-12 mb-3">
-      <label for="companyname" class="form-label">Company Name *</label>
-      <input type="text" class="form-control" id="companyname">
-    </div> 
-    <div class="col-12 col-md-4 mb-3">
-      <label for="city" class="form-label">City *</label>
-      <input type="text" class="form-control" id="city">
-    </div> 
-    <div class="col-12 col-md-4 mb-3">
-      <label for="country" class="form-label">Country</label>
-      <input type="text" class="form-control" id="country">
-    </div>
-    <div class="col-12 col-md-4 mb-3">
-      <label for="province" class="form-label">Province</label>
-      <input type="text" class="form-control" id="province">
-    </div>
-    <div class="col-12 col-md-6 mb-3">
-      <label for="postalcode" class="form-label">Postal/Zip Code *</label>
-      <input type="text" class="form-control" id="postalcode">
-    </div>
-    <div class="col-12 col-md-6 mb-3">
-      <label for="phone" class="form-label">Phone *</label>
-      <input type="text" class="form-control" id="phone">
-    </div>
-    <!--<div class="col-12">
-      <button type="submit" class="add btn btn-primary my-3">Add</button>
-      </div>-->
+    <label class="form-check-label" for="exampleCheck1">I agree to the <a href="#">terms of sales & service</a> and will adhere to them unconditionally.</label>
   </div> 
-  </form>
 </div>
 
+</form>
 
 </div>
 
@@ -260,17 +157,19 @@
  <form action="">
    <div class="row">
    <div class="col-12 mb-3">
-     <label for="accountholdername" class="form-label">Account Holder Name *</label>
+     <label for="accountholdername" class="form-label">Purchase order number*</label>
      <input type="text" class="form-control" id="accountholdername">
-   </div> 
-   <div class="col-12 mb-3">
-     <label for="email" class="form-label">Email *</label>
-     <input type="email" class="form-control" id="email*">
-   </div>  
+   </div>   
  </div>
  <div class="add-edit-info justify-content-start">
   <p class="small">Once your order is complete, you will receive details by email on how to complete your payment.</p>  
  </div>
+ <div class="add-edit-info justify-content-start">
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="exampleCheck1" checked="checked">
+    <label class="form-check-label" for="exampleCheck1">I agree to the <a href="#">terms of sales & service</a> and will adhere to them unconditionally.</label>
+  </div>
+</div>
  </form>
  </div>
 </div>
@@ -278,18 +177,307 @@
 
 
 
-<div class="d-flex mt-2">
-<a href="thankyou-order.html" class="btn btn-primary my-3">Place Order</a>
+<div class="d-flex mt-1">
+<a href="thankyou-order.html" class="btn btn-primary my-2">Place Order</a>
 </div>
 
 
 
 </div>
 </div>
+
+<div class="col-lg-4 col-md-5">
+  <div class="order-summary-box">
+    <h5>Order Summary</h5>
+<hr class="blue-line">
+    <div class="subtotal-shipping">
+      <div class="d-flex justify-content-between">
+      <p>Subtotal (1 Items)</p> <p>$30.00</p>
+      </div>
+      <div class="d-flex justify-content-between">
+        <p>Shipping</p> <p>$0.00</p>
+        </div>                  
+    </div>
+    <hr>
+    <div class="subtotal-shipping">
+      <div class="d-flex justify-content-between">
+      <p>TPS/GST</p> <p>$1.50</p>
+      </div>
+      <div class="d-flex justify-content-between">
+        <p>TVQ/PST</p> <p>$2.99</p>
+        </div>                  
+    </div>
+    <hr>
+    <div class="subtotal-shipping">
+      <div class="d-flex justify-content-between">
+      <p>Grand Total</p> <p>$34.49</p>
+      </div>                   
+    </div>
+
+
+  </div>
+
+  
+
+
+</div>
+
 </div>
 </div>
 </div>
+
+
+
+
+
+
 </main>
+
+
+<!--shipping info add address modal-->
+<div class="shipping-info-edit add-shipping-address modal-box">
+  <div class="header"><h4>Add Shipping Address</h4><button class="close-modal-btn"><img src="images/close-icon-small.svg" alt="" class="svg"></button></div>
+  <form action="">
+     <div class="row d-flex p-4">
+            
+    <div class="col-12 col-md-6 mb-2">
+      <label for="firstname" class="form-label">First Name *</label>
+      <input type="text" class="form-control" id="firstname">
+    </div> 
+    <div class="col-12 col-md-6 mb-2">
+      <label for="lastname" class="form-label">Last Name *</label>
+      <input type="text" class="form-control" id="lastname">
+    </div>  
+    <div class="col-12 col-md-6 mb-2">
+      <label for="addressline1" class="form-label">Address Line 1 *</label>
+      <input type="text" class="form-control" id="addressline1">
+    </div> 
+    <div class="col-12 col-md-6 mb-2">
+      <label for="addressline2" class="form-label">Address Line 2 *</label>
+      <input type="text" class="form-control" id="addressline2">
+    </div> 
+    <div class="col-12 col-md-12 mb-2">
+      <label for="companyname" class="form-label">Company Name *</label>
+      <input type="text" class="form-control" id="companyname">
+    </div> 
+    <div class="col-12 col-md-4 mb-2">
+      <label for="city" class="form-label">City *</label>
+      <input type="text" class="form-control" id="city">
+    </div> 
+    <div class="col-12 col-md-4 mb-2">
+      <label for="country" class="form-label">Country</label>
+      <input type="text" class="form-control" id="country">
+    </div>
+    <div class="col-12 col-md-4 mb-2">
+      <label for="province" class="form-label">Province</label>
+      <input type="text" class="form-control" id="province">
+    </div>
+    <div class="col-12 col-md-6 mb-2">
+      <label for="postalcode" class="form-label">Postal/Zip Code *</label>
+      <input type="text" class="form-control" id="postalcode">
+    </div>
+    <div class="col-12 col-md-6 mb-2">
+      <label for="phone" class="form-label">Phone *</label>
+      <input type="text" class="form-control" id="phone">
+    </div>
+    <div class="col-12">
+      <button type="submit" class="add btn btn-primary my-3">Use this address</button>
+      </div>
+    
+  </div> 
+  </form>
+</div>
+
+
+
+ <!--shipping info edit address modal-->
+<div class="shipping-info-edit edit-shipping-address modal-box">
+  <div class="header"><h4>Edit Shipping Address</h4><button class="close-modal-btn"><img src="images/close-icon-small.svg" alt="" class="svg"></button></div>
+  <form action="">
+     <div class="row d-flex p-4">
+            
+    <div class="col-12 col-md-6 mb-2">
+      <label for="firstname" class="form-label">First Name *</label>
+      <input type="text" class="form-control" id="firstname">
+    </div> 
+    <div class="col-12 col-md-6 mb-2">
+      <label for="lastname" class="form-label">Last Name *</label>
+      <input type="text" class="form-control" id="lastname">
+    </div>  
+    <div class="col-12 col-md-6 mb-2">
+      <label for="addressline1" class="form-label">Address Line 1 *</label>
+      <input type="text" class="form-control" id="addressline1">
+    </div> 
+    <div class="col-12 col-md-6 mb-2">
+      <label for="addressline2" class="form-label">Address Line 2 *</label>
+      <input type="text" class="form-control" id="addressline2">
+    </div> 
+    <div class="col-12 col-md-12 mb-2">
+      <label for="companyname" class="form-label">Company Name *</label>
+      <input type="text" class="form-control" id="companyname">
+    </div> 
+    <div class="col-12 col-md-4 mb-2">
+      <label for="city" class="form-label">City *</label>
+      <input type="text" class="form-control" id="city">
+    </div> 
+    <div class="col-12 col-md-4 mb-2">
+      <label for="country" class="form-label">Country</label>
+      <input type="text" class="form-control" id="country">
+    </div>
+    <div class="col-12 col-md-4 mb-2">
+      <label for="province" class="form-label">Province</label>
+      <input type="text" class="form-control" id="province">
+    </div>
+    <div class="col-12 col-md-6 mb-2">
+      <label for="postalcode" class="form-label">Postal/Zip Code *</label>
+      <input type="text" class="form-control" id="postalcode">
+    </div>
+    <div class="col-12 col-md-6 mb-2">
+      <label for="phone" class="form-label">Phone *</label>
+      <input type="text" class="form-control" id="phone">
+    </div>
+    <div class="col-12">
+      <button type="submit" class="add btn btn-primary my-3">Save</button>
+      </div>
+    
+  </div> 
+  </form>
+</div>
+
+<!--plan modal add payment option-->
+<div class="shipping-info-edit add-card-payment-box modal-box">
+  <div class="header"><h4>Add New Credit Card</h4><button class="close-modal-btn"><img src="images/close-icon-small.svg" alt="" class="svg"></button></div>
+  <div class="content p-4">
+    <figure class="my-3"><img src="images/payment-cards.png" alt=""></figure>
+   <form action="">
+     <div class="row">
+      <div class="col-12 mb-3">
+        <label for="cardnumber" class="form-label">Card number*</label>
+        <input type="number" class="form-control" id="cardnumber">
+      </div> 
+      <div class="col-12 mb-3">
+        <label for="expirationdate" class="form-label">Expiration date (MM / YY)</label>
+        <input type="number" class="form-control" id="expirationdate">
+      </div> 
+     <div class="col-12 mb-3">
+         <label for="cardholdername" class="form-label">Cardholder name*</label>
+         <input type="text" class="form-control" id="cardholdername">
+       </div>  
+       <div class="col-12 mb-3">
+        <label for="securitycode" class="form-label">Security code</label>
+        <input type="text" class="form-control" id="securitycode">
+      </div> 
+       </div>
+   </form>
+   <div class="d-flex my-2 justify-content-start">
+          <button type="submit" class="addcard-continue btn btn-primary">Add and Continue</button>
+  </div>
+ </div>
+  
+ </div>
+
+<!--select billing address for payment-->
+<div class="shipping-info-edit add-billing-address-box modal-box">
+  <div class="header"><h4>Select a billing address</h4><button class="close-modal-btn"><img src="images/close-icon-small.svg" alt="" class="svg"></button></div>
+  <div class="content p-4">   
+   <form action="">
+     <div class="row">        
+    
+       <div class="col-12 mb-3">
+     
+        <div class="payment-card-box">
+          <div class="payment-card payment-type active">
+            <button class="creditcard cards"><i class="circle filled">&nbsp;</i></button>         
+            <p>Adam Henrick, 204 St Antoine Est, Montreal, Quebec, Canada H2Y-1A3</p>
+          <div>
+           </div>
+          </div>
+          <div class="payment-card payment-type">
+            <button class="creditcard cards"><i class="circle filled">&nbsp;</i></button>         
+            <p>Adam Henrick, 204 St Antoine Est, Montreal, Quebec, Canada H2Y-1A3</p>
+          <div>
+           </div>
+          </div> 
+          <div class="payment-card payment-type">
+            <button class="creditcard cards"><i class="circle filled">&nbsp;</i></button>         
+            <p>Adam Henrick, 204 St Antoine Est, Montreal, Quebec, Canada H2Y-1A3</p>
+          <div>
+           </div>
+          </div>     
+          </div>
+
+
+      </div> 
+       </div>
+   </form>
+   <div class="d-flex my-2 justify-content-start gap-2">
+          <button type="submit" class="add-billing-address-btn btn btn-light">Add an address</button>
+          <button type="submit" class="btn btn-primary ml-3">Use this address</button>
+  </div>
+ </div>
+  
+ </div>
+
+<!--add billing payment address modal-->
+<div class="shipping-info-edit add-billing-payment-address modal-box">
+  <div class="header"><h4>Add Billing Address</h4><button class="close-modal-btn"><img src="images/close-icon-small.svg" alt="" class="svg"></button></div>
+  <form action="">
+     <div class="row d-flex p-4">
+            
+    <div class="col-12 col-md-6 mb-2">
+      <label for="firstname" class="form-label">First Name *</label>
+      <input type="text" class="form-control" id="firstname">
+    </div> 
+    <div class="col-12 col-md-6 mb-2">
+      <label for="lastname" class="form-label">Last Name *</label>
+      <input type="text" class="form-control" id="lastname">
+    </div>  
+    <div class="col-12 col-md-6 mb-2">
+      <label for="addressline1" class="form-label">Address Line 1 *</label>
+      <input type="text" class="form-control" id="addressline1">
+    </div> 
+    <div class="col-12 col-md-6 mb-2">
+      <label for="addressline2" class="form-label">Address Line 2 *</label>
+      <input type="text" class="form-control" id="addressline2">
+    </div> 
+    <div class="col-12 col-md-12 mb-2">
+      <label for="companyname" class="form-label">Company Name *</label>
+      <input type="text" class="form-control" id="companyname">
+    </div> 
+    <div class="col-12 col-md-4 mb-2">
+      <label for="city" class="form-label">City *</label>
+      <input type="text" class="form-control" id="city">
+    </div> 
+    <div class="col-12 col-md-4 mb-2">
+      <label for="country" class="form-label">Country</label>
+      <input type="text" class="form-control" id="country">
+    </div>
+    <div class="col-12 col-md-4 mb-2">
+      <label for="province" class="form-label">Province</label>
+      <input type="text" class="form-control" id="province">
+    </div>
+    <div class="col-12 col-md-6 mb-2">
+      <label for="postalcode" class="form-label">Postal/Zip Code *</label>
+      <input type="text" class="form-control" id="postalcode">
+    </div>
+    <div class="col-12 col-md-6 mb-2">
+      <label for="phone" class="form-label">Phone *</label>
+      <input type="text" class="form-control" id="phone">
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary my-3">Use this address</button>
+      </div>
+    
+  </div> 
+  </form>
+</div>
+
+
+
+
+
+
+
 <div id="footer"></div>
 </body>
 </html>
