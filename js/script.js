@@ -18,13 +18,48 @@ $(document).ready(function() {
                 $('.add-edit-info').css("display", "none");
             });
 
-            $('button.editaddress').click(function() {
+            /*$('button.editaddress').click(function() {
                 $('.shipping-info-edit').addClass('active');
                 $('.personal-info').removeClass('active');
                 $('.shipping-info-add').removeClass('active');
                 $('.add-edit-info').css("display", "none");
                 
-            });
+            });*/
+            
+            $('button.change-address').click(function() {
+              $('.change-address-box').addClass('active');
+              $('.personal-info').removeClass('active');
+          });
+          $('.edit-ship-address').click(function() {
+            $('body').addClass('overlay');
+            $('.edit-shipping-address').addClass('active');
+        });
+        $('.add-address').click(function() {
+          $('body').addClass('overlay');
+          $('.add-shipping-address').addClass('active');
+      });
+      $('.add-newcard').click(function() {
+        $('body').addClass('overlay');
+        $('.add-card-payment-box').addClass('active');
+    });
+    $('.addcard-continue').click(function() {
+      $('body').addClass('overlay');
+      $('.add-card-payment-box').removeClass('active');
+      $('.add-billing-address-box').addClass('active');
+  });
+  $('.add-billing-address-btn').click(function() {
+    $('body').addClass('overlay');
+    $('.add-billing-payment-address').addClass('active');
+    $('.add-billing-address-box').removeClass('active');
+});
+$('.edit-retailer-detail').click(function() {
+  $('body').addClass('overlay');
+  $('.edit-retailer-detail-box').addClass('active');
+});
+      
+
+
+
 
             $('button.add').click(function() {
                 $('.shipping-info-add').removeClass('active');
@@ -63,10 +98,13 @@ $('.esim-plan-modal').click(function() {
     $('body').addClass('dark-overlay');
 });
 $('.close-modal-btn').click(function() {
-  $('.plan-modal').removeClass('active-modal');;
+  $('.plan-modal').removeClass('active-modal');
   $('body').removeClass('dark-overlay');
+  $('body').removeClass('light-overlay');
+  $('body').removeClass('overlay');
+  $('.modal-box').removeClass('active');
+  $('.user-modal').removeClass('active-modal');
 });
-
 $('.change-pswd').click(function() {
   $('.change-pswd-box').addClass('active-modal');
   $('body').addClass('light-overlay');
@@ -106,10 +144,7 @@ $('.remove-paymentopt').click(function() {
 $('.close-btn').click(function() {
     $('.offer-line').hide();
 });
-$('.close-modal-btn').click(function() {
-$('.user-modal').removeClass('active-modal');;
-$('body').removeClass('light-overlay');
-});
+
         });
         jQuery(document).ready(function($) {
           "use strict";
