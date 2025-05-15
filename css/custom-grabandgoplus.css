@@ -3424,35 +3424,40 @@ body.overlay:before {
   margin-bottom: 1em;
 }
 
-.hero-container {
-  max-width: 1600px;
+.promotion.main-wrapper {
+  padding: 2.5em 0 4em 0;
 }
 
-.hero-container .hero-banner {
-  background: url("../images/hero-bg.jpg");
+.promotion .container {
+  margin: auto;
+}
+
+.promotion .hero-banner {
+  background: url("../images/promotion-hero-bg.jpg") no-repeat;
+  background-size: cover;
   width: 100%;
-  height: auto;
+  max-height: 234px;
   min-height: 100%;
-  border-radius: 20px;
   margin-bottom: 4em;
 }
 
-.hero-container .hero-banner .content {
+.promotion .hero-banner .content {
   color: #fff;
-  margin: auto 1em auto 5em;
-  width: 50%;
+  margin: auto 0;
+  width: 80%;
 }
 
-.hero-container .hero-banner .content h4 {
+.promotion .hero-banner .content h1 {
   color: #fff;
   border-radius: 30px;
-  background: #FBB500;
   padding: 10px 20px;
+  font-weight: 600;
   display: inline-flex;
   margin-bottom: 1.2em;
+  margin: 0;
 }
 
-.hero-container .hero-banner .content h1 {
+.promotion .container .hero-banner .content h1 {
   font-size: 4.5em;
   color: #fff;
   line-height: 1;
@@ -3769,6 +3774,9 @@ i.arrowright:after {
   .admin-retailer .order-history .order-history-row .order-id .title {
     display: inline !important;
   }
+  .promotion .hero-banner .content {
+    width: 100%;
+  }
 }
 @media (min-width: 768px) {
   button.hamburger, button.close-btn {
@@ -4044,6 +4052,9 @@ i.arrowright:after {
   }
   .admin-retailer .order-history .order-history-row .order-type {
     width: auto;
+  }
+  .promotion .hero-banner .content h1 {
+    font-size: 3.5em;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -4710,6 +4721,9 @@ i.arrowright:after {
   }
   .admin-retailer .order-history .order-history-row .retail-detail:nth-child(1), .admin-retailer .order-history .order-history-row .retail-detail:nth-child(11), .admin-retailer .order-history .order-history-row .retail-detail:nth-child(6) {
     display: block !important;
+  }
+  .promotion .hero-banner .content h1 {
+    font-size: 2em;
   }
 }
 @media (max-width: 567px) {
