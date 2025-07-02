@@ -297,7 +297,7 @@ header.sticky {
   transition: none;
 }
 
-.topnav ul li > a:hover .svg path {
+.topnav ul li > a:hover .svg path, .login-shop a.travel-sim:hover .svg path {
   fill: #0096D4;
 }
 
@@ -375,6 +375,12 @@ header.sticky {
 .login-shop a.shop:hover {
   background: #fff;
   border-radius: 50%;
+}
+
+.login-shop .travel-sim {
+  padding: 0.3em 0.5em;
+  border: solid 1px #1C5291;
+  border-radius: 4px;
 }
 
 /*end*/
@@ -3505,7 +3511,7 @@ body.overlay:before {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
 .offer-line .offer-modal {
@@ -3711,6 +3717,272 @@ i.arrowright:after {
   align-items: center;
 }
 
+/*travel eSIM page*/
+#header + section.hero-banner.travel-eSIM {
+  margin-top: 126px;
+}
+
+.hero-banner.travel-eSIM .hero-content {
+  transform: translate(0, 0);
+}
+
+.travel-eSIM .hero-content h1 {
+  color: #1C5291;
+  font-weight: 700;
+}
+
+.travel-eSIM .hero-content h1 span {
+  color: #2C3034;
+  font-weight: 400;
+  font-size: 0.5em;
+}
+
+.travel-eSIM .hero-content .destination-search {
+  margin: 2em 0;
+}
+
+.travel-eSIM .hero-content .destination-search h5 {
+  font-weight: 500;
+  color: #2C3034;
+  margin: 0.2em;
+}
+
+.travel-eSIM .hero-content .destination-search .search-travel {
+  max-width: 350px;
+}
+
+.travel-eSIM .hero-content .destination-search .search-travel .form-control {
+  border-color: #0096D4 !important;
+  border-radius: 4px !important;
+  padding: 0 0.5em;
+}
+
+.esim-howitworks h2.title {
+  margin-bottom: 0.5em;
+}
+
+.esim-howitworks .box {
+  background-color: #E8E8E8;
+  padding: 1.5em;
+  margin: 1em 0 0;
+}
+
+.esim-howitworks .box h2 {
+  color: #1C5291;
+  margin-bottom: 0.5em;
+}
+
+.esim-howitworks .box h2:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #1C5291;
+  margin: 0.2em 0;
+}
+
+.esim-howitworks .box p {
+  color: #888888;
+  line-height: 1.4;
+}
+
+.esim-international ul {
+  list-style: circle;
+  margin-bottom: 1em;
+}
+
+.esim-international ul.benefits li {
+  display: inline;
+  color: #2C3034;
+  line-height: 1.8;
+}
+
+.esim-international ul.benefits li:before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #2C3034;
+  border-radius: 50%;
+  align-items: center;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+.esim-international .search-travel {
+  max-width: 300px;
+}
+
+.esim-international .card-box {
+  margin: 2em 0;
+}
+
+.esim-international .card-box h3 {
+  font-size: 1.625em;
+  font-weight: 700;
+  color: #2C3034;
+  margin: 0.8em 0 0;
+}
+
+.esim-international .card-box p {
+  font-size: 0.875em;
+}
+
+.esim-product-features .feature-list {
+  border-bottom: 1px #666666 solid;
+  margin-bottom: 1.5em;
+}
+
+.esim-product-features .feature-content h2 {
+  margin-bottom: 1em;
+}
+
+.esim-product-features .feature-list:last-child {
+  border: none;
+}
+
+.esim-product-features .feature-list h4 {
+  font-size: 1.5em;
+  margin: 0 0 0.5em 0;
+}
+
+.esim-product-features .feature-list p {
+  font-size: 1.125em;
+  color: #666666;
+  line-height: 1.2;
+}
+
+.esim-product-features .feature-list .img {
+  margin-right: 1em;
+}
+
+.faqs .card-header {
+  background: none;
+  border: none;
+}
+
+.faqs .card-header h5 button {
+  padding: 0;
+  color: #2C3034;
+  font-size: 1.4em;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.faqs .card-header h5 button.collapsed span, .faqs .card-header h5 button span {
+  position: relative;
+  /*background: #fff;*/
+  width: 30px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.faqs .card-header h5 button span {
+  height: 30px;
+}
+
+.faqs .card-header h5 button.collapsed span:before, .faqs .card-header h5 button span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  height: 2px;
+  background: #1C5291;
+  left: 0;
+  top: 0;
+  transform: rotate(0);
+}
+
+.faqs .card-header h5 button span:before {
+  transform: rotate(45deg);
+  top: 15px;
+}
+
+.faqs .card-header h5 button.collapsed span:after, .faqs .card-header h5 button span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  height: 2px;
+  background: #1C5291;
+  left: 0;
+  bottom: 0;
+  transform: rotate(0);
+}
+
+.faqs .card-header h5 button span:after {
+  transform: rotate(-45deg);
+  top: 15px;
+}
+
+/*.faqs .card-header h5 button span{ height: 40px;}
+.faqs .card-header h5 button span:before { transform: rotate(10deg);}
+.faqs .card-header h5 button span:after { transform: rotate(-10deg);}*/
+.faqs .card-header h5 button:focus {
+  box-shadow: none;
+}
+
+.faqs .card-header h5 button:hover, .faqs .card-header h5 button:focus {
+  text-decoration: none;
+}
+
+.faqs .card {
+  background: none;
+  border-radius: 0;
+  border-width: 1px 0 0;
+}
+
+.faqs .card .card-body {
+  padding: 0 1.25rem 1.25rem;
+  font-size: 1.25rem;
+  color: #666666;
+  line-height: 1.8;
+}
+
+.select-data-plan input {
+  visibility: hidden;
+}
+
+.select-data-plan .form-check {
+  display: inline-flex;
+  padding: 0;
+}
+
+.select-data-plan legend {
+  font-weight: 700;
+}
+
+.esim-plan-details input[type=radio] + label {
+  display: inline-flex;
+  border: #666666 solid 1px;
+  padding: 0.8em 1em;
+  border-radius: 4px;
+  margin: 0 1em 1em 0;
+  font-weight: bold;
+  color: #1C5291;
+  min-width: 160px;
+  justify-content: center;
+}
+
+.esim-plan-details input[type=radio]:checked + label {
+  color: #1C5291;
+  border: #0096D4 solid 2px;
+}
+
+.form-check label.confirm {
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.select-data .btn {
+  padding: 12px 15px;
+}
+
 /*responsiveness*/
 @media screen and (max-width: 1280px) {
   .hero-banner {
@@ -3912,6 +4184,12 @@ i.arrowright:after {
   .hero-container .hero-banner .content h1 {
     font-size: 3.5em;
   }
+  .topnav ul li {
+    margin: 0;
+  }
+  .login-shop a {
+    margin: 0 0.3em;
+  }
 }
 /*ipad*/
 @media (max-width: 991px) {
@@ -4056,6 +4334,14 @@ i.arrowright:after {
   .promotion .hero-banner .content h1 {
     font-size: 3.5em;
   }
+  #header + section.hero-banner.travel-eSIM {
+    margin-top: 91px;
+  }
+  .login-shop a {
+    font-size: 1.125em;
+    font-weight: 600;
+    margin: 0em;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   html {
@@ -4068,8 +4354,8 @@ i.arrowright:after {
     padding: 0;
   }
   .topnav ul li {
-    font-size: 1em;
-    margin: 0 5px;
+    font-size: 0.9em;
+    margin: 0 1px;
     padding: 5px 0;
   }
   .login-shop a {
@@ -4228,8 +4514,6 @@ i.arrowright:after {
     height: 18px;
     position: relative;
     order: 4;
-    background: none;
-    margin-right: 15px;
   }
   button.hamburger:after {
     content: "";
@@ -4277,12 +4561,6 @@ i.arrowright:after {
   }
   .login-shop a {
     margin: 0 0.2em;
-  }
-  .login-shop {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 1em;
   }
   header .topnav {
     display: none;
@@ -4338,14 +4616,29 @@ i.arrowright:after {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: -34px 0px;
-       object-position: -34px 0px;
+    -o-object-position: 0 0;
+       object-position: 0 0;
+  }
+  #header + section.hero-banner.travel-eSIM {
+    margin-top: 92px;
+  }
+  .hero-banner.travel-eSIM img {
+    height: 350px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right 0;
+       object-position: right 0;
+    -o-object-position: -10px 0px;
+       object-position: -10px 0px;
+    opacity: 0.8;
   }
   .hero-banner .hero-content {
     position: absolute;
     left: 5%;
     width: 75%;
     transform: translate(0, 5%);
+    z-index: 6;
   }
   .hero-banner .hero-content h1 {
     font-size: 2em;
@@ -4725,6 +5018,15 @@ i.arrowright:after {
   .promotion .hero-banner .content h1 {
     font-size: 2em;
   }
+  .faqs h5 {
+    font-size: 1em;
+  }
+  .esim-product-features .feature-content h2, .esim-howitworks h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
 }
 @media (max-width: 567px) {
   .mt-xs-2 {
@@ -4769,5 +5071,47 @@ i.arrowright:after {
     display: inline-flex;
     gap: 10px;
     align-items: center;
+  }
+  .login-shop {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.2em;
+    background: #f7f7f7;
+  }
+  button.hamburger {
+    border-width: 2px 0 2px 0;
+    border-style: solid;
+    border-color: #000;
+    width: 30px;
+    height: 18px;
+    position: absolute;
+    order: 4;
+    background: none;
+    margin-right: 15px;
+    right: 0;
+    top: 18px;
+  }
+  .hero-banner img {
+    height: 220px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: -34px 0px;
+       object-position: -34px 0px;
+  }
+  #header + section.hero-banner.travel-eSIM {
+    margin-top: 105px;
+  }
+  .hero-banner.travel-eSIM img {
+    height: 350px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right 0;
+       object-position: right 0;
+    -o-object-position: -250px 0px;
+       object-position: -250px 0px;
+    opacity: 0.8;
   }
 }/*# sourceMappingURL=custom-grabandgoplus.css.map */
