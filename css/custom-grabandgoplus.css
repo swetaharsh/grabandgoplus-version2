@@ -2,6 +2,7 @@ body {
   font: 100% "DM Sans", sans-serif;
   color: #2C3034;
   font-family: "DM Sans", sans-serif;
+  /*font-family: "Fira Sans", sans-serif;*/
   font-size: 1em;
   /*transition: all ease 0.2s;*/
   display: flex;
@@ -90,6 +91,12 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "DM Sans", sans-serif;
+}
+
+h1.esim-title {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -257,6 +264,12 @@ header {
   background-color: rgb(255, 255, 255);
 }
 
+header.esim {
+  background: #fff;
+  border: none;
+  filter: none;
+}
+
 header .phone-text {
   display: flex;
   gap: 20px;
@@ -295,10 +308,6 @@ header.sticky {
 .topnav ul li > a:hover {
   color: #0096D4;
   transition: none;
-}
-
-.topnav ul li > a:hover .svg path, .login-shop a.travel-sim:hover .svg path {
-  fill: #0096D4;
 }
 
 .topnav ul li span {
@@ -365,11 +374,7 @@ header.sticky {
 }
 
 .login-shop a.active {
-  color: #0096D4;
-}
-
-.login-shop a:hover {
-  color: #0096D4;
+  color: #1C5291;
 }
 
 .login-shop a.shop:hover {
@@ -378,9 +383,9 @@ header.sticky {
 }
 
 .login-shop .travel-sim {
-  padding: 0.3em 0.5em;
-  border: solid 1px #1C5291;
-  border-radius: 4px;
+  padding: 0.4em 0.8em;
+  border: solid 2px #1C5291;
+  border-radius: 28px;
 }
 
 /*end*/
@@ -455,6 +460,10 @@ footer .info-links h6 {
 
 /*end*/
 /*index*/
+.esim-body .hero-banner {
+  height: auto;
+}
+
 .hero-banner {
   height: 740px;
   display: flex;
@@ -490,19 +499,32 @@ section {
   margin: 1em 0;
 }
 
-.hero-banner .hero-content h1 {
-  color: #2C3034;
-  font-size: 4.5em;
-  font-weight: 600;
+/*  .hero-banner .hero-content h1{ color:$dark-color; font-size:4.5em; font-weight: 600; margin-top: 0; text-wrap: nowrap;}
+  .hero-banner .hero-content h1 span{ color: $skyblue-color; display: block; text-wrap: nowrap; font-weight: 900;}*/
+.hero-banner .hero-content h1.esim-title {
+  color: #1C5291;
+  font-size: 4.2em;
+  font-weight: 900;
   margin-top: 0;
   text-wrap: nowrap;
+  line-height: 110%;
 }
 
-.hero-banner .hero-content h1 span {
-  color: #0096D4;
-  display: block;
-  text-wrap: nowrap;
+.travel-eSIM .hero-content h2 {
+  color: #000;
+  font-size: 3.375em;
+  background: #0096D4;
   font-weight: 900;
+  margin-top: 0;
+  line-height: 110%;
+  font-family: "Fira Sans", sans-serif;
+  display: inline-flex;
+  padding: 5px 10px;
+  transform: rotate(-3deg);
+}
+
+.travel-eSIM .hero-content h5 {
+  font-size: 1.75em;
 }
 
 .hero-banner .hero-content h5, .hero-banner .hero-content h4 {
@@ -1232,16 +1254,18 @@ button.accordion.is-open:after {
   align-items: flex-start;
 }
 
+/* .cart-info .cart-details .browse-btn .plan-box{ border:#D9D9D9 solid 1px; min-width: 130px; min-height: 90px; padding: 1em;
+   margin-right: 1em; border-radius:6px; background: #fff; display: flex; flex-direction: column;}*/
 .cart-info .cart-details .browse-btn .plan-box {
-  border: #D9D9D9 solid 1px;
   min-width: 130px;
   min-height: 90px;
-  padding: 1em;
   margin-right: 1em;
-  border-radius: 6px;
-  background: #fff;
   display: flex;
   flex-direction: column;
+}
+
+.cart-info .cart-details .browse-btn .plan-box img {
+  border-radius: 28px;
 }
 
 .cart-info .cart-details .browse-btn .plan-box .esim-title {
@@ -3718,12 +3742,24 @@ i.arrowright:after {
 }
 
 /*travel eSIM page*/
+body.esim-body main {
+  background: #fff;
+}
+
 #header + section.hero-banner.travel-eSIM {
   margin-top: 126px;
 }
 
 .hero-banner.travel-eSIM .hero-content {
-  transform: translate(0, 0);
+  transform: translate(0, 15%);
+}
+
+.esim-body h2 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 3.375em;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #1C5291;
 }
 
 .travel-eSIM .hero-content h1 {
@@ -3738,23 +3774,72 @@ i.arrowright:after {
 }
 
 .travel-eSIM .hero-content .destination-search {
-  margin: 2em 0;
+  margin: 1.5em 0;
 }
 
 .travel-eSIM .hero-content .destination-search h5 {
   font-weight: 500;
   color: #2C3034;
-  margin: 0.2em;
+  margin: 1em 0.2em 0.5em 0.2em;
 }
 
-.travel-eSIM .hero-content .destination-search .search-travel {
+.travel-eSIM .destination-search .search-travel {
   max-width: 350px;
+  background: #fff;
+  padding: 5px 10px;
+  min-height: 64px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.travel-eSIM .hero-content .destination-search .search-travel .form-control {
+.travel-eSIM .hero-content .destination-search .search-travel button {
+  border: none;
+  background: none;
+}
+
+.travel-eSIM .hero-content .destination-search .search-travel input {
   border-color: #0096D4 !important;
-  border-radius: 4px !important;
+  border: none;
+  min-width: 250px;
   padding: 0 0.5em;
+}
+
+.travel-eSIM .plan-ss {
+  position: absolute;
+  right: 2%;
+  height: auto;
+}
+
+.esim-listing .destination-search .search-travel {
+  margin: auto;
+  border: #666666 solid 1px;
+}
+
+.esim-listing ul.tabs {
+  display: flex;
+  margin: auto;
+  gap: 15px;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.esim-listing ul.tabs li {
+  display: flex;
+}
+
+.esim-listing ul.tabs li a {
+  padding: 0.8em 1.5em;
+  border: #666666 solid 1px;
+  border-radius: 28px;
+  font-weight: 600;
+}
+
+.esim-listing ul.tabs li a:hover, .esim-listing ul.tabs li.active a {
+  background: #1C5291;
+  color: #fff;
+  border-color: #1C5291;
 }
 
 .esim-howitworks h2.title {
@@ -3786,6 +3871,65 @@ i.arrowright:after {
   line-height: 1.4;
 }
 
+.esim-howitworks .card-box {
+  background: #F2F3F7;
+  text-align: center;
+}
+
+.esim-howitworks .card-box .steps {
+  color: #000;
+  font-size: 1.875em;
+  background: #E57EFB;
+  font-weight: 900;
+  margin: 0.2em 0 0.5em 0;
+  padding: 5px 15px;
+  line-height: 110%;
+  font-family: "Fira Sans", sans-serif;
+  display: inline-flex;
+  transform: rotate(-3deg);
+}
+
+.esim-howitworks .card-box .steps.two {
+  background: #87EFFF;
+}
+
+.esim-howitworks .card-box .steps.three {
+  background: #2EFECC;
+}
+
+.esim-howitworks .card-box img {
+  border-radius: 28px;
+}
+
+.esim-howitworks .card-box h4 {
+  font-size: 2.5em;
+}
+
+.esim-howitworks .card-box p {
+  font-size: 1.25em;
+  line-height: 140%;
+  color: #666666;
+}
+
+.esim-howitworks .card-box:hover {
+  border: solid 1px transparent !important;
+}
+
+.esim-howitworks.features .card-box {
+  border-radius: 28px;
+  padding: 2em 3em;
+  text-align: left;
+}
+
+.esim-howitworks.features .card-box .steps {
+  font-size: 3.375em;
+}
+
+.esim-international p.subline {
+  font-size: 1.5em;
+  color: #666666;
+}
+
 .esim-international ul {
   list-style: circle;
   margin-bottom: 1em;
@@ -3813,28 +3957,87 @@ i.arrowright:after {
   max-width: 300px;
 }
 
+.esim-howitworks .card-box {
+  padding: 2em 1em;
+}
+
 .esim-international .card-box {
-  margin: 2em 0;
+  margin: 1em 0;
+  border: #F2F3F7 solid 1px;
+  border-radius: 10px;
+}
+
+.esim-international .card-box:hover {
+  border-color: #1C5291;
+}
+
+.esim-international .card-box a {
+  padding: 2em 1em;
+  display: block;
+}
+
+.esim-international .card-box .country-map {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #d6d6d6;
+  margin-bottom: 0.5em;
 }
 
 .esim-international .card-box h3 {
-  font-size: 1.625em;
+  font-size: 1.25em;
   font-weight: 700;
   color: #2C3034;
   margin: 0.8em 0 0;
 }
 
-.esim-international .card-box p {
-  font-size: 0.875em;
+.esim-international .card-box .price-click {
+  display: flex;
+  justify-content: space-between;
+}
+
+.esim-international .btn {
+  font-family: "Fira Sans", sans-serif;
+  background: #8227D2;
+  border: #F2F3F7 solid 2px;
+  border-radius: 40px;
+  font-weight: 900;
+  padding: 4px 30px;
+  color: #fff;
+  font-size: 2.75em;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+}
+
+.esim-international .btn:hover {
+  background: #6215a5;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 4px;
+}
+
+.cta-box .cta-box-content {
+  background: url("../images/cta-bg.jpg") no-repeat;
+  border-radius: 28px;
+  padding: 3em 0;
+}
+
+.esim-product-features {
+  padding: 5em 0;
 }
 
 .esim-product-features .feature-list {
   border-bottom: 1px #666666 solid;
-  margin-bottom: 1.5em;
+  margin-bottom: 2.5em;
+}
+
+.esim-product-features .feature-content {
+  border-bottom: 1px rgba(136, 136, 136, 0.5) solid;
 }
 
 .esim-product-features .feature-content h2 {
-  margin-bottom: 1em;
+  margin-bottom: 0.2em;
+}
+
+.esim-product-features .feature-content p {
+  color: #666666;
 }
 
 .esim-product-features .feature-list:last-child {
@@ -3853,7 +4056,12 @@ i.arrowright:after {
 }
 
 .esim-product-features .feature-list .img {
-  margin-right: 1em;
+  margin: 1em 0 0.5em 0;
+}
+
+.esim-product-features .benefit-hero {
+  position: absolute;
+  left: 10%;
 }
 
 .faqs .card-header {
@@ -3864,65 +4072,30 @@ i.arrowright:after {
 .faqs .card-header h5 button {
   padding: 0;
   color: #2C3034;
-  font-size: 1.4em;
+  font-size: 1em;
+  line-height: 1.4;
   width: 100%;
   display: flex;
   position: relative;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   text-align: left;
-}
-
-.faqs .card-header h5 button.collapsed span, .faqs .card-header h5 button span {
-  position: relative;
-  /*background: #fff;*/
-  width: 30px;
-  height: 16px;
-  display: flex;
-  align-items: center;
 }
 
 .faqs .card-header h5 button span {
   height: 30px;
+  width: 30px;
+  margin-top: 5px;
 }
 
-.faqs .card-header h5 button.collapsed span:before, .faqs .card-header h5 button span:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  height: 2px;
-  background: #1C5291;
-  left: 0;
-  top: 0;
-  transform: rotate(0);
+.faqs .card-header h5 button .toggle {
+  background: url("../images/miuns-icon.svg") no-repeat;
 }
 
-.faqs .card-header h5 button span:before {
-  transform: rotate(45deg);
-  top: 15px;
+.faqs .card-header h5 button.collapsed .toggle {
+  background: url("../images/plus-icon.svg") no-repeat;
 }
 
-.faqs .card-header h5 button.collapsed span:after, .faqs .card-header h5 button span:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  height: 2px;
-  background: #1C5291;
-  left: 0;
-  bottom: 0;
-  transform: rotate(0);
-}
-
-.faqs .card-header h5 button span:after {
-  transform: rotate(-45deg);
-  top: 15px;
-}
-
-/*.faqs .card-header h5 button span{ height: 40px;}
-.faqs .card-header h5 button span:before { transform: rotate(10deg);}
-.faqs .card-header h5 button span:after { transform: rotate(-10deg);}*/
 .faqs .card-header h5 button:focus {
   box-shadow: none;
 }
@@ -3932,16 +4105,21 @@ i.arrowright:after {
 }
 
 .faqs .card {
-  background: none;
-  border-radius: 0;
-  border-width: 1px 0 0;
+  background: #F2F3F7;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  border: none;
+}
+
+.faqs img {
+  border-radius: 28px;
 }
 
 .faqs .card .card-body {
   padding: 0 1.25rem 1.25rem;
-  font-size: 1.25rem;
+  font-size: 1.125em;
   color: #666666;
-  line-height: 1.8;
+  line-height: 1.4;
 }
 
 .select-data-plan input {
@@ -3954,7 +4132,41 @@ i.arrowright:after {
 }
 
 .select-data-plan legend {
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+.form-check label.confirm {
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.125em;
+}
+
+.select-data .btn {
+  padding: 12px 15px;
+}
+
+.esim-body .breadcrumb {
+  background: #F2F3F7;
+  font-size: 1.125em;
+}
+
+.esim-body .breadcrumb .back {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  line-height: 1;
+  border: none;
+}
+
+.plan-img img {
+  border-radius: 28px;
+}
+
+.esim-plan-details {
+  background: #F2F3F7;
+  border-radius: 28px;
+  padding: 2em;
 }
 
 .esim-plan-details input[type=radio] + label {
@@ -3974,13 +4186,117 @@ i.arrowright:after {
   border: #0096D4 solid 2px;
 }
 
-.form-check label.confirm {
-  font-weight: 400;
-  line-height: 1.5;
+.esim-plan-details .btn {
+  font-size: 2.25em;
+  padding: 0.1em 1em;
 }
 
-.select-data .btn {
-  padding: 12px 15px;
+.esim-plan-details h2 {
+  text-transform: none;
+}
+
+.question {
+  background: rgba(255, 255, 255, 0.6);
+  color: #2C3034;
+  padding: 5px;
+  font-size: 1.125em;
+  border-radius: 10px;
+  margin: 1em 0;
+}
+
+.other-checkout {
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+}
+
+.other-checkout span {
+  font-weight: 600;
+  margin-right: 0.2em;
+  font-size: 1.125em;
+}
+
+.other-checkout a {
+  margin-right: 0.2em;
+}
+
+.esim-plan-details .plan-usp ul {
+  padding: 0.5em 1em;
+  font-weight: 500;
+  border: #cbcbcb solid 2px;
+  display: inline-flex;
+  background: none;
+  justify-content: space-between;
+  font-size: 1.125em;
+  color: #2C3034;
+  border-radius: 28px;
+}
+
+.esim-plan-details .plan-usp ul li {
+  position: relative;
+}
+
+.esim-plan-details .plan-usp ul li::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #0096D4;
+  display: inline-flex;
+  border-radius: 50%;
+  margin: 0 0.5em;
+}
+
+.esim-plan-details .plan-usp ul li:last-child:after {
+  display: none;
+}
+
+.esim-plan-details .country-plans {
+  display: flex;
+  gap: 15px;
+  flex-basis: calc(80% - 1em);
+  flex-wrap: wrap;
+  margin: 1em;
+}
+
+.esim-plan-details .plans-box {
+  background: #fff;
+  padding: 1em;
+  min-width: 240px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.esim-plan-details .plans-box .days-data {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  align-items: center;
+}
+
+.esim-plan-details .plans-box .days-data .validity {
+  font-size: 1.25em;
+  color: #2C3034;
+}
+
+.esim-plan-details .plans-box .days-data .circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: #666666 solid 1px;
+}
+
+.esim-plan-details .plans-box.active .days-data .circle {
+  background: #1C5291;
+  border: #666666 solid 1px;
+}
+
+.esim-plan-details .plans-box .price {
+  font-size: 1.125em;
+  color: #0096D4;
+  font-weight: 600;
+  font-size: 1.25em;
 }
 
 /*responsiveness*/
