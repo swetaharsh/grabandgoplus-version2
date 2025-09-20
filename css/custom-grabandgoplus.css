@@ -4379,6 +4379,9 @@ body.esim-body main {
   .admin-retailer .account-content .content-block {
     padding: 1em;
   }
+  .esim-product-features .benefit-hero {
+    left: -10%;
+  }
 }
 /*tablet and laptop*/
 @media (min-width: 992px) and (max-width: 1200px) {
