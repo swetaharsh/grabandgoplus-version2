@@ -4506,6 +4506,18 @@ body.esim-body main {
   .login-shop a {
     margin: 0 0.3em;
   }
+  .esim-product-features .benefit-hero {
+    left: -15%;
+  }
+  .travel-eSIM .plan-ss {
+    display: none;
+  }
+  .esim-howitworks.features .card-box {
+    padding: 1em;
+  }
+  .esim-howitworks.features .card-box .steps {
+    font-size: 2.15em;
+  }
 }
 /*ipad*/
 @media (max-width: 991px) {
@@ -4700,6 +4712,9 @@ body.esim-body main {
        object-fit: cover;
     height: 400px;
   }
+  .travel-eSIM .plan-ss, .esim-product-features .benefit-hero {
+    display: none;
+  }
   .hero-banner .hero-content h1 {
     font-size: 3em;
   }
@@ -4790,6 +4805,24 @@ body.esim-body main {
   }
   .promoplan-box .plan-details {
     width: 50%;
+  }
+  .esim-howitworks.features .card-box {
+    padding: 1em;
+  }
+  .esim-howitworks.features .card-box .steps {
+    font-size: 1.7em;
+  }
+  .esim-howitworks .card-box .steps {
+    font-size: 1.875em;
+  }
+  .esim-body h2 {
+    font-size: 2.5em;
+  }
+  .esim-international .btn {
+    font-size: 2em;
+  }
+  .hero-banner .hero-content h1.esim-title {
+    font-size: 3.5em;
   }
 }
 /*mobile*/
@@ -5343,6 +5376,33 @@ body.esim-body main {
     margin-bottom: 1em;
     margin-top: 1em;
   }
+  .plan-img img {
+    border-radius: 28px;
+    height: 250px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .plan-img {
+    margin-bottom: 2em;
+  }
+  .esim-plan-details .plan-usp ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .esim-plan-details .plan-usp ul li::after {
+    display: none;
+  }
+  .esim-listing ul.tabs {
+    display: flex;
+    margin: auto;
+    gap: 5px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .esim-international .card-box a {
+    padding: 1em;
+  }
 }
 @media (max-width: 567px) {
   .mt-xs-2 {
@@ -5429,5 +5489,81 @@ body.esim-body main {
     -o-object-position: -250px 0px;
        object-position: -250px 0px;
     opacity: 0.8;
+  }
+  .travel-eSIM .hero-content h2 {
+    font-size: 1em;
+    display: none;
+  }
+  .hero-banner.travel-eSIM .hero-content {
+    transform: translate(0, 35%);
+  }
+  .hero-banner .hero-content h1.esim-title {
+    font-size: 2.5em;
+  }
+  .hero-banner.travel-eSIM img.plan-ss {
+    display: none;
+  }
+  .travel-eSIM .hero-content br {
+    display: block !important;
+  }
+  .esim-body h2 {
+    font-size: 2.5em;
+  }
+  .esim-international .btn {
+    font-size: 1.75em;
+  }
+  .benefit-hero {
+    display: none;
+  }
+  .esim-product-features {
+    padding: 1em 0;
+  }
+  .cta-box .cta-box-content {
+    padding: 1em 0;
+  }
+  .esim-howitworks.features .card-box {
+    padding: 1em;
+  }
+  .esim-howitworks.features .card-box .steps {
+    font-size: 2em;
+  }
+  .faqs .card-header h5 button {
+    font-size: 1.5em;
+  }
+  .esim-product-features .feature-list {
+    margin-bottom: 1.5em;
+  }
+  .esim-howitworks h2.title {
+    margin: 15px;
+  }
+  .travel-eSIM .hero-content .destination-search .search-travel input {
+    min-width: 190px;
+  }
+  .plan-img img {
+    border-radius: 28px;
+    height: 250px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .plan-img {
+    margin-bottom: 2em;
+  }
+  .esim-plan-details .plan-usp ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .esim-plan-details .plan-usp ul li::after {
+    display: none;
+  }
+  .esim-listing ul.tabs {
+    display: flex;
+    margin: auto;
+    gap: 5px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .esim-international .card-box a {
+    padding: 1em;
   }
 }/*# sourceMappingURL=custom-grabandgoplus.css.map */
