@@ -3752,6 +3752,7 @@ body.esim-body main {
 
 .hero-banner.travel-eSIM .hero-content {
   transform: translate(0, 15%);
+  z-index: 1;
 }
 
 .esim-body h2 {
