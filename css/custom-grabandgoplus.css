@@ -5741,6 +5741,7 @@ body.esim-body main {
     padding: 0;
     background: #000;
     border-radius: 20px;
+    margin: 0 1em;
   }
   .hero-banner.travel-eSIM .google-review-img img {
     height: auto;
