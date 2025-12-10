@@ -5845,4 +5845,7 @@ body.esim-body main {
     flex-direction: column;
     gap: 10px;
   }
+  .logo {
+    margin-left: 1em;
+  }
 }/*# sourceMappingURL=custom-grabandgoplus.css.map */
