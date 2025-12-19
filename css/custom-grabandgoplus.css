@@ -278,6 +278,12 @@ header .phone-text {
 }
 
 header.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+
+header.sticky.esim {
   position: sticky;
   width: 100%;
   z-index: 9;
@@ -481,12 +487,20 @@ section {
   padding: 3em 0;
 }
 
+.hero-banner {
+  height: 740px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+
 .hero-banner .hero-content {
   position: absolute;
   left: 10%;
   width: 35%;
   transform: translate(0, 8%);
-  top: 0;
 }
 
 .hero-banner .hero-content h5, .hero-banner .hero-content p, .hero-banner .hero-content h4 {
@@ -3788,6 +3802,7 @@ body.esim-body main {
 
 .hero-banner.travel-eSIM .hero-content {
   transform: translate(0, 35%);
+  top: 0;
 }
 
 .esim-body .container {
