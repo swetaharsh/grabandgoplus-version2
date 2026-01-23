@@ -10,10 +10,6 @@ body {
   /*background: $light-color;*/
 }
 
-html, body {
-  height: 100%;
-}
-
 html {
   font-size: 100%;
   background: #F2F3F7;
@@ -3615,6 +3611,37 @@ i.arrowright:after {
   transform: rotate(45deg);
 }
 
+.promoplan-box.simcard-phone .img-box {
+  width: 45%;
+}
+
+.promoplan-box.simcard-phone .plan-details {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.promoplan-box .plan-details .plan-price .new-price {
+  color: #0096D4;
+}
+
+.promoplan-box.simcard-phone .plan-details .data h3 {
+  flex-wrap: wrap;
+  font-size: 2.25em;
+  display: flex;
+  line-height: 1.25;
+  color: #1C5291;
+}
+
+.promoplan-box.simcard-phone .plan-details .data h3 span {
+  font-size: 75%;
+}
+
+.promoplan-box.simcard-phone .plan-details .plan-price {
+  margin: 1em 0;
+}
+
 /*admin retailer page*/
 .admin-retailer .customer-account-details {
   display: flex;
@@ -4872,6 +4899,9 @@ body.esim-body main {
   .promoplan-box .img-box, .hero-container .hero-banner .hero-img {
     display: none;
   }
+  .promoplan-box.simcard-phone .img-box {
+    display: block;
+  }
   .hero-container .hero-banner .content {
     width: 100%;
     margin: 2em;
@@ -5664,6 +5694,15 @@ body.esim-body main {
   .esim-international .card-box a {
     padding: 1em;
   }
+  .promoplan-box.simcard-phone .plan-details {
+    width: 100%;
+  }
+  .promoplan-box.simcard-phone .img-box {
+    display: block;
+  }
+  .promoplan-box .img-box img {
+    border-radius: 10px;
+  }
 }
 @media (max-width: 567px) {
   .mt-xs-2 {
@@ -5862,5 +5901,15 @@ body.esim-body main {
   }
   .logo {
     margin-left: 1em;
+  }
+  .promoplan-box.simcard-phone .plan-details {
+    width: 100%;
+  }
+  .promoplan-box.simcard-phone .img-box {
+    width: 100%;
+    display: block;
+  }
+  .promoplan-box .img-box img {
+    border-radius: 10px;
   }
 }/*# sourceMappingURL=custom-grabandgoplus.css.map */
