@@ -13,6 +13,7 @@ body {
 html {
   font-size: 100%;
   background: #F2F3F7;
+  scroll-behavior: smooth;
 }
 
 :focus, :focus-visible {
@@ -4556,6 +4557,115 @@ body.esim-body main {
   padding: 0.5em 1.5em;
 }
 
+/*blog*/
+.blog-details .esim-ad-box {
+  background: #2EFECC;
+  padding: 1.5em;
+  position: sticky;
+  top: 60px;
+}
+
+.blog-details .esim-ad-box p {
+  line-height: 1.5;
+}
+
+.blog-details .esim-ad-box a {
+  border: #1C5291 solid 1px;
+  padding: 10px 15px;
+  background: #1C5291;
+  color: #fff;
+}
+
+.blog-details .blog-content h4 {
+  color: #1C5291;
+}
+
+.blog-details .blog-content li {
+  font-size: 1.125em;
+  line-height: 1.8;
+}
+
+.blog-details .blog-content ul.numbers {
+  padding-left: 1em;
+}
+
+.blog-details .blog-content ul.numbers li {
+  list-style: decimal;
+}
+
+.blog-details .blog-content li a {
+  text-decoration: underline;
+}
+
+.blog-details .place-block {
+  margin: 2em 0 1em 0;
+}
+
+.blog-details .place-block h3 {
+  font-size: 1.75em;
+}
+
+.blog-details .place-block ul {
+  margin: 1em 0;
+}
+
+.blog-details .place-block li {
+  line-height: 1.5;
+}
+
+.blog-details .place-block a {
+  color: #1C5291;
+}
+
+.blog .blog-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 1em 0;
+}
+
+.blog .blog-box .block-content .date {
+  margin: 0.5em 0;
+  display: block;
+  color: #666666;
+}
+
+.blog .blog-box .block-content p {
+  color: #666666;
+  line-height: 1.4;
+  font-size: 1em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.blog .blog-box .block-content a {
+  padding: 0;
+  margin: 0.5em 0;
+  color: #0096D4;
+}
+
+.blog .hori-box {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.hori-box .blog-box {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.hori-box .blog-box .img-block img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hori-box .blog-box .img-block {
+  min-width: 40%;
+}
+
 /*responsiveness*/
 @media screen and (max-width: 1280px) {
   .hero-banner {
@@ -5754,6 +5864,8 @@ body.esim-body main {
     width: 100%;
     padding: 0.2em;
     background: #f7f7f7;
+    gap: 5px;
+    justify-content: center;
   }
   button.hamburger {
     border-width: 2px 0 2px 0;
